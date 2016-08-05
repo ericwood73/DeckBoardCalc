@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module external.linked.project.id="library" external.linked.project.path="$USER_HOME$/.sbt/0.13/staging/9775fde4bb0f329cb44a/geoscript/geoscript" external.root.project.path="$MODULE_DIR$/../.." external.system.id="SBT" type="JAVA_MODULE" version="4">
+  <component name="NewModuleRootManager" LANGUAGE_LEVEL="JDK_1_6" inherit-compiler-output="false">
+    <output url="file://$USER_HOME$/.sbt/0.13/staging/9775fde4bb0f329cb44a/geoscript/geoscript/target/scala-2.11/classes" />
+    <output-test url="file://$USER_HOME$/.sbt/0.13/staging/9775fde4bb0f329cb44a/geoscript/geoscript/target/scala-2.11/test-classes" />
+    <exclude-output />
+    <content url="file://$USER_HOME$/.sbt/0.13/staging/9775fde4bb0f329cb44a/geoscript/geoscript">
+      <sourceFolder url="file://$USER_HOME$/.sbt/0.13/staging/9775fde4bb0f329cb44a/geoscript/geoscript/src/main/java" isTestSource="false" />
+      <sourceFolder url="file://$USER_HOME$/.sbt/0.13/staging/9775fde4bb0f329cb44a/geoscript/geoscript/src/main/scala" isTestSource="false" />
+      <sourceFolder url="file://$USER_HOME$/.sbt/0.13/staging/9775fde4bb0f329cb44a/geoscript/geoscript/src/main/scala-2.11" isTestSource="false" />
+      <sourceFolder url="file://$USER_HOME$/.sbt/0.13/staging/9775fde4bb0f329cb44a/geoscript/geoscript/target/scala-2.11/src_managed/main" isTestSource="false" />
+      <sourceFolder url="file://$USER_HOME$/.sbt/0.13/staging/9775fde4bb0f329cb44a/geoscript/geoscript/src/test/java" isTestSource="true" />
+      <sourceFolder url="file://$USER_HOME$/.sbt/0.13/staging/9775fde4bb0f329cb44a/geoscript/geoscript/src/test/scala" isTestSource="true" />
+      <sourceFolder url="file://$USER_HOME$/.sbt/0.13/staging/9775fde4bb0f329cb44a/geoscript/geoscript/src/test/scala-2.11" isTestSource="true" />
+      <sourceFolder url="file://$USER_HOME$/.sbt/0.13/staging/9775fde4bb0f329cb44a/geoscript/geoscript/target/scala-2.11/src_managed/test" isTestSource="true" />
+      <sourceFolder url="file://$USER_HOME$/.sbt/0.13/staging/9775fde4bb0f329cb44a/geoscript/geoscript/src/main/resources" type="java-resource" />
+      <sourceFolder url="file://$USER_HOME$/.sbt/0.13/staging/9775fde4bb0f329cb44a/geoscript/geoscript/target/scala-2.11/resource_managed/main" type="java-resource" />
+      <sourceFolder url="file://$USER_HOME$/.sbt/0.13/staging/9775fde4bb0f329cb44a/geoscript/geoscript/src/test/resources" type="java-test-resource" />
+      <sourceFolder url="file://$USER_HOME$/.sbt/0.13/staging/9775fde4bb0f329cb44a/geoscript/geoscript/target/scala-2.11/resource_managed/test" type="java-test-resource" />
+      <excludeFolder url="file://$USER_HOME$/.sbt/0.13/staging/9775fde4bb0f329cb44a/geoscript/geoscript/target" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="module" module-name="css" exported="" />
+    <orderEntry type="library" name="SBT: bouncycastle:bcmail-jdk14:138:jar" level="project" />
+    <orderEntry type="library" name="SBT: bouncycastle:bcprov-jdk14:138:jar" level="project" />
+    <orderEntry type="library" name="SBT: com.googlecode.json-simple:json-simple:1.1:jar" level="project" />
+    <orderEntry type="library" name="SBT: com.lowagie:itext:2.1.5:jar" level="project" />
+    <orderEntry type="library" name="SBT: com.vividsolutions:jts:1.13:jar" level="project" />
+    <orderEntry type="library" name="SBT: commons-collections:commons-collections:3.1:jar" level="project" />
+    <orderEntry type="library" name="SBT: commons-dbcp:commons-dbcp:1.3:jar" level="project" />
+    <orderEntry type="library" name="SBT: commons-jxpath:commons-jxpath:1.3:jar" level="project" />
+    <orderEntry type="library" name="SBT: commons-pool:commons-pool:1.5.4:jar" level="project" />
+    <orderEntry type="library" name="SBT: hsqldb:hsqldb:1.8.0.7:jar" level="project" />
+    <orderEntry type="library" name="SBT: it.geosolutions.imageio-ext:imageio-ext-tiff:1.1.7:jar" level="project" />
+    <orderEntry type="library" name="SBT: it.geosolutions.imageio-ext:imageio-ext-utilities:1.1.7:jar" level="project" />
+    <orderEntry type="library" name="SBT: java3d:vecmath:1.3.2:jar" level="project" />
+    <orderEntry type="library" name="SBT: javax.media:jai_codec:1.1.3:jar" level="project" />
+    <orderEntry type="library" name="SBT: javax.media:jai_core:1.1.3:jar" level="project" />
+    <orderEntry type="library" name="SBT: javax.media:jai_imageio:1.1:jar" level="project" />
+    <orderEntry type="library" name="SBT: jdom:jdom:1.0:jar" level="project" />
+    <orderEntry type="library" name="SBT: jgridshift:jgridshift:1.0:jar" level="project" />
+    <orderEntry type="library" name="SBT: net.java.dev.jsr-275:jsr-275:1.0-beta-2:jar" level="project" />
+    <orderEntry type="library" name="SBT: org.eclipse.emf:common:2.6.0:jar" level="project" />
+    <orderEntry type="library" name="SBT: org.eclipse.emf:ecore:2.6.1:jar" level="project" />
+    <orderEntry type="library" name="SBT: org.eclipse.xsd:xsd:2.6.0:jar" level="project" />
+    <orderEntry type="library" name="SBT: org.geotools:gt-api:9.3:jar" level="project" />
+    <orderEntry type="library" name="SBT: org.geotools:gt-coverage:9.3:jar" level="project" />
+    <orderEntry type="library" name="SBT: org.geotools:gt-cql:9.3:jar" level="project" />
+    <orderEntry type="library" name="SBT: org.geotools:gt-data:9.3:jar" level="project" />
+    <orderEntry type="library" name="SBT: org.geotools:gt-epsg-hsql:9.3:jar" level="project" />
+    <orderEntry type="library" name="SBT: org.geotools:gt-geojson:9.3:jar" level="project" />
+    <orderEntry type="library" name="SBT: org.geotools:gt-graph:9.3:jar" level="project" />
+    <orderEntry type="library" name="SBT: org.geotools:gt-jdbc:9.3:jar" level="project" />
+    <orderEntry type="library" name="SBT: org.geotools:gt-main:9.3:jar" level="project" />
+    <orderEntry type="library" name="SBT: org.geotools:gt-metadata:9.3:jar" level="project" />
+    <orderEntry type="library" name="SBT: org.geotools:gt-opengis:9.3:jar" level="project" />
+    <orderEntry type="library" name="SBT: org.geotools:gt-referencing:9.3:jar" level="project" />
+    <orderEntry type="library" name="SBT: org.geotools:gt-render:9.3:jar" level="project" />
+    <orderEntry type="library" name="SBT: org.geotools:gt-shapefile:9.3:jar" level="project" />
+    <orderEntry type="library" name="SBT: org.geotools:gt-xml:9.3:jar" level="project" />
+    <orderEntry type="library" name="SBT: org.geotools.jdbc:gt-jdbc-postgis:9.3:jar" level="project" />
+    <orderEntry type="library" name="SBT: org.geotools.jdbc:gt-jdbc-spatialite:9.3:jar" level="project" />
+    <orderEntry type="library" name="SBT: org.geotools.ogc:net.opengis.fes:9.3:jar" level="project" />
+    <orderEntry type="library" name="SBT: org.geotools.ogc:net.opengis.ows:9.3:jar" level="project" />
+    <orderEntry type="library" name="SBT: org.geotools.ogc:net.opengis.wfs:9.3:jar" level="project" />
+    <orderEntry type="library" name="SBT: org.geotools.ogc:org.w3.xlink:9.3:jar" level="project" />
+    <orderEntry type="library" name="SBT: org.geotools.xsd:gt-xsd-core:9.3:jar" level="project" />
+    <orderEntry type="library" name="SBT: org.geotools.xsd:gt-xsd-fes:9.3:jar" level="project" />
+    <orderEntry type="library" name="SBT: org.geotools.xsd:gt-xsd-filter:9.3:jar" level="project" />
+    <orderEntry type="library" name="SBT: org.geotools.xsd:gt-xsd-gml2:9.3:jar" level="project" />
+    <orderEntry type="library" name="SBT: org.geotools.xsd:gt-xsd-gml3:9.3:jar" level="project" />
+    <orderEntry type="library" name="SBT: org.geotools.xsd:gt-xsd-ows:9.3:jar" level="project" />
+    <orderEntry type="library" name="SBT: org.geotools.xsd:gt-xsd-wfs:9.3:jar" level="project" />
+    <orderEntry type="library" name="SBT: org.jaitools:jt-utils:1.3.0:jar" level="project" />
+    <orderEntry type="library" name="SBT: org.jaitools:jt-zonalstats:1.3.0:jar" level="project" />
+    <orderEntry type="library" name="SBT: org.scala-lang:scala-library:2.11.8:jar" level="project" />
+    <orderEntry type="library" scope="TEST" name="SBT: org.scala-lang:scala-reflect:2.11.0:jar" level="project" />
+    <orderEntry type="library" name="SBT: org.scala-lang:scala-swing:2.11.0-M7:jar" level="project" />
+    <orderEntry type="library" name="SBT: org.scala-lang.modules:scala-parser-combinators_2.11:1.0.4:jar" level="project" />
+    <orderEntry type="library" name="SBT: org.scala-lang.modules:scala-xml_2.11:1.0.5:jar" level="project" />
+    <orderEntry type="library" scope="TEST" name="SBT: org.scalatest:scalatest_2.11:2.1.3:jar" level="project" />
+    <orderEntry type="library" name="SBT: org.xerial:sqlite-jdbc-spatialite:3.7.2-2.4:jar" level="project" />
+    <orderEntry type="library" name="SBT: picocontainer:picocontainer:1.2:jar" level="project" />
+    <orderEntry type="library" name="SBT: postgresql:postgresql:8.4-701.jdbc3:jar" level="project" />
+    <orderEntry type="library" name="SBT: xerces:xercesImpl:2.7.1:jar" level="project" />
+    <orderEntry type="library" name="SBT: xml-apis:xml-apis:1.0.b2:jar" level="project" />
+    <orderEntry type="library" name="SBT: xml-apis:xml-apis-xerces:2.7.1:jar" level="project" />
+  </component>
+</module>

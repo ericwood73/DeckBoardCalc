@@ -1,0 +1,906 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="ivy-report.xsl"?>
+<ivy-report version="1.0">
+	<info
+		organisation="deckboardcalculator"
+		module="deckboardcalculator_2.11"
+		revision="1.0.0"
+		conf="compile-internal"
+		confs="compile, runtime, test, provided, optional, compile-internal, runtime-internal, test-internal, plugin, sources, docs, pom, scala-tool"
+		date="20160522162803"/>
+	<dependencies>
+		<module organisation="org.scalactic" name="scalactic_2.11">
+			<revision name="2.2.6" status="release" pubdate="20160105135905" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.scalatest.org" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="64">
+				<license name="the Apache License, ASL Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0"/>
+				<metadata-artifact status="no" details="" size="3090" time="0" location="/Users/ericwood/.ivy2/cache/org.scalactic/scalactic_2.11/ivy-2.2.6.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/scalactic/scalactic_2.11/2.2.6/scalactic_2.11-2.2.6.pom"/>
+				<caller organisation="deckboardcalculator" name="deckboardcalculator_2.11" conf="compile-internal, compile, provided, optional" rev="2.2.6" rev-constraint-default="2.2.6" rev-constraint-dynamic="2.2.6" callerrev="1.0.0"/>
+				<artifacts>
+					<artifact name="scalactic_2.11" type="bundle" ext="jar" status="no" details="" size="426520" time="0" location="/Users/ericwood/.ivy2/cache/org.scalactic/scalactic_2.11/bundles/scalactic_2.11-2.2.6.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/scalactic/scalactic_2.11/2.2.6/scalactic_2.11-2.2.6.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.scala-lang" name="scala-reflect">
+			<revision name="2.11.7" status="release" pubdate="20150622161746" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.scala-lang.org/" extra-info.apiURL="http://www.scala-lang.org/api/2.11.7/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="65">
+				<license name="BSD 3-Clause" url="http://www.scala-lang.org/license.html"/>
+				<metadata-artifact status="no" details="" size="2637" time="0" location="/Users/ericwood/.ivy2/cache/org.scala-lang/scala-reflect/ivy-2.11.7.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/scala-lang/scala-reflect/2.11.7/scala-reflect-2.11.7.pom"/>
+				<caller organisation="org.scalactic" name="scalactic_2.11" conf="default, compile, runtime, master" rev="2.11.7" rev-constraint-default="2.11.7" rev-constraint-dynamic="2.11.7" callerrev="2.2.6"/>
+				<artifacts>
+					<artifact name="scala-reflect" type="jar" ext="jar" status="no" details="" size="4576443" time="0" location="/Users/ericwood/.ivy2/cache/org.scala-lang/scala-reflect/jars/scala-reflect-2.11.7.jar">
+						<origin-location is-local="false" location="UNKNOWN"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.geoscript" name="geoscript_2.11">
+			<revision name="0.8.2" status="integration" pubdate="20160522162802" resolver="inter-project" artresolver="inter-project" downloaded="false" searched="false" default="false" conf="compile, default(compile)" position="1">
+				<metadata-artifact status="failed" details="" size="0" time="0" searched="false"/>
+				<caller organisation="deckboardcalculator" name="deckboardcalculator_2.11" conf="compile-internal, compile, provided, optional" rev="0.8.2" rev-constraint-default="0.8.2" rev-constraint-dynamic="0.8.2" callerrev="1.0.0"/>
+				<artifacts>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.lowagie" name="itext">
+			<revision name="2.1.5" status="release" pubdate="20090420175248" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.lowagie.com/iText/" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="61">
+				<license name="Mozilla Public License" url="http://www.mozilla.org/MPL/MPL-1.1.html"/>
+				<metadata-artifact status="no" details="" size="2750" time="0" location="/Users/ericwood/.ivy2/cache/com.lowagie/itext/ivy-2.1.5.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/lowagie/itext/2.1.5/itext-2.1.5.pom"/>
+				<caller organisation="org.geoscript" name="geoscript_2.11" conf="compile" rev="2.1.5" rev-constraint-default="2.1.5" rev-constraint-dynamic="2.1.5" callerrev="0.8.2"/>
+				<artifacts>
+					<artifact name="itext" type="jar" ext="jar" status="no" details="" size="1117661" time="0" location="/Users/ericwood/.ivy2/cache/com.lowagie/itext/jars/itext-2.1.5.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/lowagie/itext/2.1.5/itext-2.1.5.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="bouncycastle" name="bcprov-jdk14">
+			<revision name="138" status="release" pubdate="20080404130549" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.bouncycastle.org/java.html" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="63">
+				<license name="Bouncy Castle License" url="http://www.bouncycastle.org/licence.html"/>
+				<metadata-artifact status="no" details="" size="2645" time="0" location="/Users/ericwood/.ivy2/cache/bouncycastle/bcprov-jdk14/ivy-138.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/bouncycastle/bcprov-jdk14/138/bcprov-jdk14-138.pom"/>
+				<caller organisation="com.lowagie" name="itext" conf="default, compile, runtime, master" rev="138" rev-constraint-default="138" rev-constraint-dynamic="138" callerrev="2.1.5"/>
+				<artifacts>
+					<artifact name="bcprov-jdk14" type="jar" ext="jar" status="no" details="" size="1551468" time="0" location="/Users/ericwood/.ivy2/cache/bouncycastle/bcprov-jdk14/jars/bcprov-jdk14-138.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/bouncycastle/bcprov-jdk14/138/bcprov-jdk14-138.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="bouncycastle" name="bcmail-jdk14">
+			<revision name="138" status="release" pubdate="20080404120727" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.bouncycastle.org/java.html" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="62">
+				<license name="Bouncy Castle License" url="http://www.bouncycastle.org/licence.html"/>
+				<metadata-artifact status="no" details="" size="2645" time="0" location="/Users/ericwood/.ivy2/cache/bouncycastle/bcmail-jdk14/ivy-138.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/bouncycastle/bcmail-jdk14/138/bcmail-jdk14-138.pom"/>
+				<caller organisation="com.lowagie" name="itext" conf="default, compile, runtime, master" rev="138" rev-constraint-default="138" rev-constraint-dynamic="138" callerrev="2.1.5"/>
+				<artifacts>
+					<artifact name="bcmail-jdk14" type="jar" ext="jar" status="no" details="" size="192035" time="0" location="/Users/ericwood/.ivy2/cache/bouncycastle/bcmail-jdk14/jars/bcmail-jdk14-138.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/bouncycastle/bcmail-jdk14/138/bcmail-jdk14-138.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.geotools.jdbc" name="gt-jdbc-spatialite">
+			<revision name="9.3" status="release" pubdate="20130622090026" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="59">
+				<license name="Lesser General Public License (LGPL)" url="http://www.gnu.org/copyleft/lesser.txt"/>
+				<metadata-artifact status="no" details="" size="24924" time="0" location="/Users/ericwood/.ivy2/cache/org.geotools.jdbc/gt-jdbc-spatialite/ivy-9.3.xml" searched="false" origin-is-local="false" origin-location="http://download.osgeo.org/webdav/geotools/org/geotools/jdbc/gt-jdbc-spatialite/9.3/gt-jdbc-spatialite-9.3.pom"/>
+				<caller organisation="org.geoscript" name="geoscript_2.11" conf="compile" rev="9.3" rev-constraint-default="9.3" rev-constraint-dynamic="9.3" callerrev="0.8.2"/>
+				<artifacts>
+					<artifact name="gt-jdbc-spatialite" type="jar" ext="jar" status="no" details="" size="87582" time="0" location="/Users/ericwood/.ivy2/cache/org.geotools.jdbc/gt-jdbc-spatialite/jars/gt-jdbc-spatialite-9.3.jar">
+						<origin-location is-local="false" location="http://download.osgeo.org/webdav/geotools/org/geotools/jdbc/gt-jdbc-spatialite/9.3/gt-jdbc-spatialite-9.3.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.xerial" name="sqlite-jdbc-spatialite">
+			<revision name="3.7.2-2.4" status="release" pubdate="20120714002800" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="60">
+				<metadata-artifact status="no" details="" size="2278" time="0" location="/Users/ericwood/.ivy2/cache/org.xerial/sqlite-jdbc-spatialite/ivy-3.7.2-2.4.xml" searched="false" origin-is-local="false" origin-location="http://download.osgeo.org/webdav/geotools/org/xerial/sqlite-jdbc-spatialite/3.7.2-2.4/sqlite-jdbc-spatialite-3.7.2-2.4.pom"/>
+				<caller organisation="org.geotools.jdbc" name="gt-jdbc-spatialite" conf="default, compile, runtime, master" rev="3.7.2-2.4" rev-constraint-default="3.7.2-2.4" rev-constraint-dynamic="3.7.2-2.4" callerrev="9.3"/>
+				<artifacts>
+					<artifact name="sqlite-jdbc-spatialite" type="jar" ext="jar" status="no" details="" size="5284776" time="0" location="/Users/ericwood/.ivy2/cache/org.xerial/sqlite-jdbc-spatialite/jars/sqlite-jdbc-spatialite-3.7.2-2.4.jar">
+						<origin-location is-local="false" location="http://download.osgeo.org/webdav/geotools/org/xerial/sqlite-jdbc-spatialite/3.7.2-2.4/sqlite-jdbc-spatialite-3.7.2-2.4.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.geotools.jdbc" name="gt-jdbc-postgis">
+			<revision name="9.3" status="release" pubdate="20130622085904" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="55">
+				<license name="Lesser General Public License (LGPL)" url="http://www.gnu.org/copyleft/lesser.txt"/>
+				<metadata-artifact status="no" details="" size="24908" time="0" location="/Users/ericwood/.ivy2/cache/org.geotools.jdbc/gt-jdbc-postgis/ivy-9.3.xml" searched="false" origin-is-local="false" origin-location="http://download.osgeo.org/webdav/geotools/org/geotools/jdbc/gt-jdbc-postgis/9.3/gt-jdbc-postgis-9.3.pom"/>
+				<caller organisation="org.geoscript" name="geoscript_2.11" conf="compile" rev="9.3" rev-constraint-default="9.3" rev-constraint-dynamic="9.3" callerrev="0.8.2"/>
+				<artifacts>
+					<artifact name="gt-jdbc-postgis" type="jar" ext="jar" status="no" details="" size="37503" time="0" location="/Users/ericwood/.ivy2/cache/org.geotools.jdbc/gt-jdbc-postgis/jars/gt-jdbc-postgis-9.3.jar">
+						<origin-location is-local="false" location="http://download.osgeo.org/webdav/geotools/org/geotools/jdbc/gt-jdbc-postgis/9.3/gt-jdbc-postgis-9.3.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.geotools" name="gt-jdbc">
+			<revision name="9.3" status="release" pubdate="20130622085611" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="57">
+				<license name="Lesser General Public License (LGPL)" url="http://www.gnu.org/copyleft/lesser.txt"/>
+				<metadata-artifact status="no" details="" size="22676" time="0" location="/Users/ericwood/.ivy2/cache/org.geotools/gt-jdbc/ivy-9.3.xml" searched="false" origin-is-local="false" origin-location="http://download.osgeo.org/webdav/geotools/org/geotools/gt-jdbc/9.3/gt-jdbc-9.3.pom"/>
+				<caller organisation="org.geotools.jdbc" name="gt-jdbc-spatialite" conf="default, compile, runtime, master" rev="9.3" rev-constraint-default="9.3" rev-constraint-dynamic="9.3" callerrev="9.3"/>
+				<caller organisation="org.geotools.jdbc" name="gt-jdbc-postgis" conf="default, compile, runtime, master" rev="9.3" rev-constraint-default="9.3" rev-constraint-dynamic="9.3" callerrev="9.3"/>
+				<artifacts>
+					<artifact name="gt-jdbc" type="jar" ext="jar" status="no" details="" size="186965" time="0" location="/Users/ericwood/.ivy2/cache/org.geotools/gt-jdbc/jars/gt-jdbc-9.3.jar">
+						<origin-location is-local="false" location="http://download.osgeo.org/webdav/geotools/org/geotools/gt-jdbc/9.3/gt-jdbc-9.3.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="postgresql" name="postgresql">
+			<revision name="8.4-701.jdbc3" status="release" pubdate="20091001191846" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://jdbc.postgresql.org" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="56">
+				<license name="BSD License" url="http://jdbc.postgresql.org/license.html"/>
+				<metadata-artifact status="no" details="" size="2349" time="0" location="/Users/ericwood/.ivy2/cache/postgresql/postgresql/ivy-8.4-701.jdbc3.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/postgresql/postgresql/8.4-701.jdbc3/postgresql-8.4-701.jdbc3.pom"/>
+				<caller organisation="org.geotools.jdbc" name="gt-jdbc-postgis" conf="default, compile, runtime, master" rev="8.4-701.jdbc3" rev-constraint-default="8.4-701.jdbc3" rev-constraint-dynamic="8.4-701.jdbc3" callerrev="9.3"/>
+				<artifacts>
+					<artifact name="postgresql" type="jar" ext="jar" status="no" details="" size="472831" time="0" location="/Users/ericwood/.ivy2/cache/postgresql/postgresql/jars/postgresql-8.4-701.jdbc3.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/postgresql/postgresql/8.4-701.jdbc3/postgresql-8.4-701.jdbc3.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.geotools" name="gt-geojson">
+			<revision name="9.3" status="release" pubdate="20130622090447" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="53">
+				<license name="Lesser General Public License (LGPL)" url="http://www.gnu.org/copyleft/lesser.txt"/>
+				<metadata-artifact status="no" details="" size="29328" time="0" location="/Users/ericwood/.ivy2/cache/org.geotools/gt-geojson/ivy-9.3.xml" searched="false" origin-is-local="false" origin-location="http://download.osgeo.org/webdav/geotools/org/geotools/gt-geojson/9.3/gt-geojson-9.3.pom"/>
+				<caller organisation="org.geoscript" name="geoscript_2.11" conf="compile" rev="9.3" rev-constraint-default="9.3" rev-constraint-dynamic="9.3" callerrev="0.8.2"/>
+				<artifacts>
+					<artifact name="gt-geojson" type="jar" ext="jar" status="no" details="" size="58599" time="0" location="/Users/ericwood/.ivy2/cache/org.geotools/gt-geojson/jars/gt-geojson-9.3.jar">
+						<origin-location is-local="false" location="http://download.osgeo.org/webdav/geotools/org/geotools/gt-geojson/9.3/gt-geojson-9.3.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.googlecode.json-simple" name="json-simple">
+			<revision name="1.1" status="release" pubdate="20090812120513" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://code.google.com/p/json-simple/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="54">
+				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="2407" time="0" location="/Users/ericwood/.ivy2/cache/com.googlecode.json-simple/json-simple/ivy-1.1.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/googlecode/json-simple/json-simple/1.1/json-simple-1.1.pom"/>
+				<caller organisation="org.geotools" name="gt-geojson" conf="default, compile, runtime, master" rev="1.1" rev-constraint-default="1.1" rev-constraint-dynamic="1.1" callerrev="9.3"/>
+				<artifacts>
+					<artifact name="json-simple" type="jar" ext="jar" status="no" details="" size="16046" time="0" location="/Users/ericwood/.ivy2/cache/com.googlecode.json-simple/json-simple/jars/json-simple-1.1.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/googlecode/json-simple/json-simple/1.1/json-simple-1.1.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.geotools" name="gt-xml">
+			<revision name="9.3" status="release" pubdate="20130622085559" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="31">
+				<license name="Lesser General Public License (LGPL)" url="http://www.gnu.org/copyleft/lesser.txt"/>
+				<metadata-artifact status="no" details="" size="21913" time="0" location="/Users/ericwood/.ivy2/cache/org.geotools/gt-xml/ivy-9.3.xml" searched="false" origin-is-local="false" origin-location="http://download.osgeo.org/webdav/geotools/org/geotools/gt-xml/9.3/gt-xml-9.3.pom"/>
+				<caller organisation="org.geoscript" name="geoscript_2.11" conf="compile" rev="9.3" rev-constraint-default="9.3" rev-constraint-dynamic="9.3" callerrev="0.8.2"/>
+				<artifacts>
+					<artifact name="gt-xml" type="jar" ext="jar" status="no" details="" size="621767" time="0" location="/Users/ericwood/.ivy2/cache/org.geotools/gt-xml/jars/gt-xml-9.3.jar">
+						<origin-location is-local="false" location="http://download.osgeo.org/webdav/geotools/org/geotools/gt-xml/9.3/gt-xml-9.3.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.geotools.xsd" name="gt-xsd-wfs">
+			<revision name="9.3" status="release" pubdate="20130622085541" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="32">
+				<license name="Lesser General Public License (LGPL)" url="http://www.gnu.org/copyleft/lesser.txt"/>
+				<metadata-artifact status="no" details="" size="32689" time="0" location="/Users/ericwood/.ivy2/cache/org.geotools.xsd/gt-xsd-wfs/ivy-9.3.xml" searched="false" origin-is-local="false" origin-location="http://download.osgeo.org/webdav/geotools/org/geotools/xsd/gt-xsd-wfs/9.3/gt-xsd-wfs-9.3.pom"/>
+				<caller organisation="org.geotools" name="gt-xml" conf="default, compile, runtime, master" rev="9.3" rev-constraint-default="9.3" rev-constraint-dynamic="9.3" callerrev="9.3"/>
+				<artifacts>
+					<artifact name="gt-xsd-wfs" type="jar" ext="jar" status="no" details="" size="121784" time="0" location="/Users/ericwood/.ivy2/cache/org.geotools.xsd/gt-xsd-wfs/jars/gt-xsd-wfs-9.3.jar">
+						<origin-location is-local="false" location="http://download.osgeo.org/webdav/geotools/org/geotools/xsd/gt-xsd-wfs/9.3/gt-xsd-wfs-9.3.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.geotools.xsd" name="gt-xsd-fes">
+			<revision name="9.3" status="release" pubdate="20130622085530" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="51">
+				<license name="Lesser General Public License (LGPL)" url="http://www.gnu.org/copyleft/lesser.txt"/>
+				<metadata-artifact status="no" details="" size="33246" time="0" location="/Users/ericwood/.ivy2/cache/org.geotools.xsd/gt-xsd-fes/ivy-9.3.xml" searched="false" origin-is-local="false" origin-location="http://download.osgeo.org/webdav/geotools/org/geotools/xsd/gt-xsd-fes/9.3/gt-xsd-fes-9.3.pom"/>
+				<caller organisation="org.geotools.xsd" name="gt-xsd-wfs" conf="compile, runtime" rev="9.3" rev-constraint-default="9.3" rev-constraint-dynamic="9.3" callerrev="9.3"/>
+				<artifacts>
+					<artifact name="gt-xsd-fes" type="jar" ext="jar" status="no" details="" size="55712" time="0" location="/Users/ericwood/.ivy2/cache/org.geotools.xsd/gt-xsd-fes/jars/gt-xsd-fes-9.3.jar">
+						<origin-location is-local="false" location="http://download.osgeo.org/webdav/geotools/org/geotools/xsd/gt-xsd-fes/9.3/gt-xsd-fes-9.3.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.geotools.xsd" name="gt-xsd-ows">
+			<revision name="9.3" status="release" pubdate="20130622085519" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="52">
+				<license name="Lesser General Public License (LGPL)" url="http://www.gnu.org/copyleft/lesser.txt"/>
+				<metadata-artifact status="no" details="" size="32165" time="0" location="/Users/ericwood/.ivy2/cache/org.geotools.xsd/gt-xsd-ows/ivy-9.3.xml" searched="false" origin-is-local="false" origin-location="http://download.osgeo.org/webdav/geotools/org/geotools/xsd/gt-xsd-ows/9.3/gt-xsd-ows-9.3.pom"/>
+				<caller organisation="org.geotools.xsd" name="gt-xsd-wfs" conf="compile, runtime" rev="9.3" rev-constraint-default="9.3" rev-constraint-dynamic="9.3" callerrev="9.3"/>
+				<caller organisation="org.geotools.xsd" name="gt-xsd-fes" conf="compile, runtime" rev="9.3" rev-constraint-default="9.3" rev-constraint-dynamic="9.3" callerrev="9.3"/>
+				<artifacts>
+					<artifact name="gt-xsd-ows" type="jar" ext="jar" status="no" details="" size="120013" time="0" location="/Users/ericwood/.ivy2/cache/org.geotools.xsd/gt-xsd-ows/jars/gt-xsd-ows-9.3.jar">
+						<origin-location is-local="false" location="http://download.osgeo.org/webdav/geotools/org/geotools/xsd/gt-xsd-ows/9.3/gt-xsd-ows-9.3.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.geotools.xsd" name="gt-xsd-filter">
+			<revision name="9.3" status="release" pubdate="20130622085503" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="39">
+				<license name="Lesser General Public License (LGPL)" url="http://www.gnu.org/copyleft/lesser.txt"/>
+				<metadata-artifact status="no" details="" size="33058" time="0" location="/Users/ericwood/.ivy2/cache/org.geotools.xsd/gt-xsd-filter/ivy-9.3.xml" searched="false" origin-is-local="false" origin-location="http://download.osgeo.org/webdav/geotools/org/geotools/xsd/gt-xsd-filter/9.3/gt-xsd-filter-9.3.pom"/>
+				<caller organisation="org.geotools.xsd" name="gt-xsd-ows" conf="compile, runtime" rev="9.3" rev-constraint-default="9.3" rev-constraint-dynamic="9.3" callerrev="9.3"/>
+				<caller organisation="org.geotools.xsd" name="gt-xsd-wfs" conf="compile, runtime" rev="9.3" rev-constraint-default="9.3" rev-constraint-dynamic="9.3" callerrev="9.3"/>
+				<artifacts>
+					<artifact name="gt-xsd-filter" type="jar" ext="jar" status="no" details="" size="104209" time="0" location="/Users/ericwood/.ivy2/cache/org.geotools.xsd/gt-xsd-filter/jars/gt-xsd-filter-9.3.jar">
+						<origin-location is-local="false" location="http://download.osgeo.org/webdav/geotools/org/geotools/xsd/gt-xsd-filter/9.3/gt-xsd-filter-9.3.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.geotools.xsd" name="gt-xsd-gml3">
+			<revision name="9.3" status="release" pubdate="20130622085450" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="50">
+				<license name="Lesser General Public License (LGPL)" url="http://www.gnu.org/copyleft/lesser.txt"/>
+				<metadata-artifact status="no" details="" size="33053" time="0" location="/Users/ericwood/.ivy2/cache/org.geotools.xsd/gt-xsd-gml3/ivy-9.3.xml" searched="false" origin-is-local="false" origin-location="http://download.osgeo.org/webdav/geotools/org/geotools/xsd/gt-xsd-gml3/9.3/gt-xsd-gml3-9.3.pom"/>
+				<caller organisation="org.geotools.xsd" name="gt-xsd-filter" conf="compile, runtime" rev="9.3" rev-constraint-default="9.3" rev-constraint-dynamic="9.3" callerrev="9.3"/>
+				<caller organisation="org.geotools.xsd" name="gt-xsd-fes" conf="compile, runtime" rev="9.3" rev-constraint-default="9.3" rev-constraint-dynamic="9.3" callerrev="9.3"/>
+				<artifacts>
+					<artifact name="gt-xsd-gml3" type="jar" ext="jar" status="no" details="" size="1520137" time="0" location="/Users/ericwood/.ivy2/cache/org.geotools.xsd/gt-xsd-gml3/jars/gt-xsd-gml3-9.3.jar">
+						<origin-location is-local="false" location="http://download.osgeo.org/webdav/geotools/org/geotools/xsd/gt-xsd-gml3/9.3/gt-xsd-gml3-9.3.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.geotools.xsd" name="gt-xsd-gml2">
+			<revision name="9.3" status="release" pubdate="20130622085433" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="49">
+				<license name="Lesser General Public License (LGPL)" url="http://www.gnu.org/copyleft/lesser.txt"/>
+				<metadata-artifact status="no" details="" size="32741" time="0" location="/Users/ericwood/.ivy2/cache/org.geotools.xsd/gt-xsd-gml2/ivy-9.3.xml" searched="false" origin-is-local="false" origin-location="http://download.osgeo.org/webdav/geotools/org/geotools/xsd/gt-xsd-gml2/9.3/gt-xsd-gml2-9.3.pom"/>
+				<caller organisation="org.geotools.xsd" name="gt-xsd-filter" conf="compile, runtime" rev="9.3" rev-constraint-default="9.3" rev-constraint-dynamic="9.3" callerrev="9.3"/>
+				<caller organisation="org.geotools.xsd" name="gt-xsd-gml3" conf="compile, runtime" rev="9.3" rev-constraint-default="9.3" rev-constraint-dynamic="9.3" callerrev="9.3"/>
+				<artifacts>
+					<artifact name="gt-xsd-gml2" type="jar" ext="jar" status="no" details="" size="82491" time="0" location="/Users/ericwood/.ivy2/cache/org.geotools.xsd/gt-xsd-gml2/jars/gt-xsd-gml2-9.3.jar">
+						<origin-location is-local="false" location="http://download.osgeo.org/webdav/geotools/org/geotools/xsd/gt-xsd-gml2/9.3/gt-xsd-gml2-9.3.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.geotools.xsd" name="gt-xsd-core">
+			<revision name="9.3" status="release" pubdate="20130622085146" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="40">
+				<license name="Lesser General Public License (LGPL)" url="http://www.gnu.org/copyleft/lesser.txt"/>
+				<metadata-artifact status="no" details="" size="25749" time="0" location="/Users/ericwood/.ivy2/cache/org.geotools.xsd/gt-xsd-core/ivy-9.3.xml" searched="false" origin-is-local="false" origin-location="http://download.osgeo.org/webdav/geotools/org/geotools/xsd/gt-xsd-core/9.3/gt-xsd-core-9.3.pom"/>
+				<caller organisation="org.geotools.xsd" name="gt-xsd-filter" conf="compile, runtime" rev="9.3" rev-constraint-default="9.3" rev-constraint-dynamic="9.3" callerrev="9.3"/>
+				<caller organisation="org.geotools.xsd" name="gt-xsd-gml2" conf="compile, runtime" rev="9.3" rev-constraint-default="9.3" rev-constraint-dynamic="9.3" callerrev="9.3"/>
+				<caller organisation="org.geotools.xsd" name="gt-xsd-gml3" conf="compile, runtime" rev="9.3" rev-constraint-default="9.3" rev-constraint-dynamic="9.3" callerrev="9.3"/>
+				<caller organisation="org.geotools.xsd" name="gt-xsd-fes" conf="compile, runtime" rev="9.3" rev-constraint-default="9.3" rev-constraint-dynamic="9.3" callerrev="9.3"/>
+				<artifacts>
+					<artifact name="gt-xsd-core" type="jar" ext="jar" status="no" details="" size="302280" time="0" location="/Users/ericwood/.ivy2/cache/org.geotools.xsd/gt-xsd-core/jars/gt-xsd-core-9.3.jar">
+						<origin-location is-local="false" location="http://download.osgeo.org/webdav/geotools/org/geotools/xsd/gt-xsd-core/9.3/gt-xsd-core-9.3.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.eclipse.xsd" name="xsd">
+			<revision name="2.6.0" status="release" pubdate="20110310223955" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="48">
+				<metadata-artifact status="no" details="" size="2182" time="0" location="/Users/ericwood/.ivy2/cache/org.eclipse.xsd/xsd/ivy-2.6.0.xml" searched="false" origin-is-local="false" origin-location="http://download.osgeo.org/webdav/geotools/org/eclipse/xsd/xsd/2.6.0/xsd-2.6.0.pom"/>
+				<caller organisation="org.geotools.xsd" name="gt-xsd-core" conf="compile, runtime" rev="2.6.0" rev-constraint-default="2.6.0" rev-constraint-dynamic="2.6.0" callerrev="9.3"/>
+				<artifacts>
+					<artifact name="xsd" type="jar" ext="jar" status="no" details="" size="992820" time="0" location="/Users/ericwood/.ivy2/cache/org.eclipse.xsd/xsd/jars/xsd-2.6.0.jar">
+						<origin-location is-local="false" location="http://download.osgeo.org/webdav/geotools/org/eclipse/xsd/xsd/2.6.0/xsd-2.6.0.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="commons-collections" name="commons-collections">
+			<revision name="3.1" status="release" pubdate="20051108173131" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="47">
+				<metadata-artifact status="no" details="" size="2505" time="0" location="/Users/ericwood/.ivy2/cache/commons-collections/commons-collections/ivy-3.1.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/commons-collections/commons-collections/3.1/commons-collections-3.1.pom"/>
+				<caller organisation="org.geotools.xsd" name="gt-xsd-core" conf="compile, runtime" rev="3.1" rev-constraint-default="3.1" rev-constraint-dynamic="3.1" callerrev="9.3"/>
+				<caller organisation="org.geotools" name="gt-jdbc" conf="compile, runtime" rev="3.1" rev-constraint-default="3.1" rev-constraint-dynamic="3.1" callerrev="9.3"/>
+				<artifacts>
+					<artifact name="commons-collections" type="jar" ext="jar" status="no" details="" size="559366" time="0" location="/Users/ericwood/.ivy2/cache/commons-collections/commons-collections/jars/commons-collections-3.1.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/commons-collections/commons-collections/3.1/commons-collections-3.1.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="commons-jxpath" name="commons-jxpath">
+			<revision name="1.3" status="release" pubdate="20080813182931" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://commons.apache.org/jxpath/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="46">
+				<metadata-artifact status="no" details="" size="6658" time="0" location="/Users/ericwood/.ivy2/cache/commons-jxpath/commons-jxpath/ivy-1.3.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/commons-jxpath/commons-jxpath/1.3/commons-jxpath-1.3.pom"/>
+				<caller organisation="org.geotools.xsd" name="gt-xsd-core" conf="compile, runtime" rev="1.3" rev-constraint-default="1.3" rev-constraint-dynamic="1.3" callerrev="9.3"/>
+				<artifacts>
+					<artifact name="commons-jxpath" type="jar" ext="jar" status="no" details="" size="299994" time="0" location="/Users/ericwood/.ivy2/cache/commons-jxpath/commons-jxpath/jars/commons-jxpath-1.3.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/commons-jxpath/commons-jxpath/1.3/commons-jxpath-1.3.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="xml-apis" name="xml-apis-xerces">
+			<revision name="2.7.1" status="release" pubdate="20120702172403" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="45">
+				<metadata-artifact status="no" details="" size="2199" time="0" location="/Users/ericwood/.ivy2/cache/xml-apis/xml-apis-xerces/ivy-2.7.1.xml" searched="false" origin-is-local="false" origin-location="http://download.osgeo.org/webdav/geotools/xml-apis/xml-apis-xerces/2.7.1/xml-apis-xerces-2.7.1.pom"/>
+				<caller organisation="org.geotools.xsd" name="gt-xsd-core" conf="compile, runtime" rev="2.7.1" rev-constraint-default="2.7.1" rev-constraint-dynamic="2.7.1" callerrev="9.3"/>
+				<artifacts>
+					<artifact name="xml-apis-xerces" type="jar" ext="jar" status="no" details="" size="194205" time="0" location="/Users/ericwood/.ivy2/cache/xml-apis/xml-apis-xerces/jars/xml-apis-xerces-2.7.1.jar">
+						<origin-location is-local="false" location="http://download.osgeo.org/webdav/geotools/xml-apis/xml-apis-xerces/2.7.1/xml-apis-xerces-2.7.1.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="xerces" name="xercesImpl">
+			<revision name="2.7.1" status="release" pubdate="20051108165133" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="44">
+				<metadata-artifact status="no" details="" size="2187" time="0" location="/Users/ericwood/.ivy2/cache/xerces/xercesImpl/ivy-2.7.1.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/xerces/xercesImpl/2.7.1/xercesImpl-2.7.1.pom"/>
+				<caller organisation="org.geotools.xsd" name="gt-xsd-core" conf="compile, runtime" rev="2.7.1" rev-constraint-default="2.7.1" rev-constraint-dynamic="2.7.1" callerrev="9.3"/>
+				<artifacts>
+					<artifact name="xercesImpl" type="jar" ext="jar" status="no" details="" size="1203860" time="0" location="/Users/ericwood/.ivy2/cache/xerces/xercesImpl/jars/xercesImpl-2.7.1.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/xerces/xercesImpl/2.7.1/xercesImpl-2.7.1.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="picocontainer" name="picocontainer">
+			<revision name="1.2" status="release" pubdate="20060709102007" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.picocontainer.org/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="42">
+				<metadata-artifact status="no" details="" size="3149" time="0" location="/Users/ericwood/.ivy2/cache/picocontainer/picocontainer/ivy-1.2.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/picocontainer/picocontainer/1.2/picocontainer-1.2.pom"/>
+				<caller organisation="org.geotools.xsd" name="gt-xsd-core" conf="compile, runtime" rev="1.2" rev-constraint-default="1.2" rev-constraint-dynamic="1.2" callerrev="9.3"/>
+				<artifacts>
+					<artifact name="picocontainer" type="jar" ext="jar" status="no" details="" size="112635" time="0" location="/Users/ericwood/.ivy2/cache/picocontainer/picocontainer/jars/picocontainer-1.2.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/picocontainer/picocontainer/1.2/picocontainer-1.2.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.geotools" name="gt-graph">
+			<revision name="9.3" status="release" pubdate="20130622085127" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="41">
+				<license name="Lesser General Public License (LGPL)" url="http://www.gnu.org/copyleft/lesser.txt"/>
+				<metadata-artifact status="no" details="" size="29526" time="0" location="/Users/ericwood/.ivy2/cache/org.geotools/gt-graph/ivy-9.3.xml" searched="false" origin-is-local="false" origin-location="http://download.osgeo.org/webdav/geotools/org/geotools/gt-graph/9.3/gt-graph-9.3.pom"/>
+				<caller organisation="org.geotools.xsd" name="gt-xsd-core" conf="compile, runtime" rev="9.3" rev-constraint-default="9.3" rev-constraint-dynamic="9.3" callerrev="9.3"/>
+				<artifacts>
+					<artifact name="gt-graph" type="jar" ext="jar" status="no" details="" size="171387" time="0" location="/Users/ericwood/.ivy2/cache/org.geotools/gt-graph/jars/gt-graph-9.3.jar">
+						<origin-location is-local="false" location="http://download.osgeo.org/webdav/geotools/org/geotools/gt-graph/9.3/gt-graph-9.3.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.geotools.ogc" name="net.opengis.wfs">
+			<revision name="9.3" status="release" pubdate="20130622085421" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="33">
+				<metadata-artifact status="no" details="" size="29594" time="0" location="/Users/ericwood/.ivy2/cache/org.geotools.ogc/net.opengis.wfs/ivy-9.3.xml" searched="false" origin-is-local="false" origin-location="http://download.osgeo.org/webdav/geotools/org/geotools/ogc/net.opengis.wfs/9.3/net.opengis.wfs-9.3.pom"/>
+				<caller organisation="org.geotools" name="gt-xml" conf="default, compile, runtime, master" rev="9.3" rev-constraint-default="9.3" rev-constraint-dynamic="9.3" callerrev="9.3"/>
+				<caller organisation="org.geotools.xsd" name="gt-xsd-wfs" conf="compile, runtime" rev="9.3" rev-constraint-default="9.3" rev-constraint-dynamic="9.3" callerrev="9.3"/>
+				<artifacts>
+					<artifact name="net.opengis.wfs" type="jar" ext="jar" status="no" details="" size="426489" time="0" location="/Users/ericwood/.ivy2/cache/org.geotools.ogc/net.opengis.wfs/jars/net.opengis.wfs-9.3.jar">
+						<origin-location is-local="false" location="http://download.osgeo.org/webdav/geotools/org/geotools/ogc/net.opengis.wfs/9.3/net.opengis.wfs-9.3.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.geotools.ogc" name="net.opengis.fes">
+			<revision name="9.3" status="release" pubdate="20130622085409" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="37">
+				<metadata-artifact status="no" details="" size="29604" time="0" location="/Users/ericwood/.ivy2/cache/org.geotools.ogc/net.opengis.fes/ivy-9.3.xml" searched="false" origin-is-local="false" origin-location="http://download.osgeo.org/webdav/geotools/org/geotools/ogc/net.opengis.fes/9.3/net.opengis.fes-9.3.pom"/>
+				<caller organisation="org.geotools.ogc" name="net.opengis.wfs" conf="compile, runtime" rev="9.3" rev-constraint-default="9.3" rev-constraint-dynamic="9.3" callerrev="9.3"/>
+				<artifacts>
+					<artifact name="net.opengis.fes" type="jar" ext="jar" status="no" details="" size="227172" time="0" location="/Users/ericwood/.ivy2/cache/org.geotools.ogc/net.opengis.fes/jars/net.opengis.fes-9.3.jar">
+						<origin-location is-local="false" location="http://download.osgeo.org/webdav/geotools/org/geotools/ogc/net.opengis.fes/9.3/net.opengis.fes-9.3.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.geotools.ogc" name="net.opengis.ows">
+			<revision name="9.3" status="release" pubdate="20130622085357" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="38">
+				<metadata-artifact status="no" details="" size="29309" time="0" location="/Users/ericwood/.ivy2/cache/org.geotools.ogc/net.opengis.ows/ivy-9.3.xml" searched="false" origin-is-local="false" origin-location="http://download.osgeo.org/webdav/geotools/org/geotools/ogc/net.opengis.ows/9.3/net.opengis.ows-9.3.pom"/>
+				<caller organisation="org.geotools.ogc" name="net.opengis.fes" conf="compile, runtime" rev="9.3" rev-constraint-default="9.3" rev-constraint-dynamic="9.3" callerrev="9.3"/>
+				<caller organisation="org.geotools.xsd" name="gt-xsd-ows" conf="compile, runtime" rev="9.3" rev-constraint-default="9.3" rev-constraint-dynamic="9.3" callerrev="9.3"/>
+				<artifacts>
+					<artifact name="net.opengis.ows" type="jar" ext="jar" status="no" details="" size="528854" time="0" location="/Users/ericwood/.ivy2/cache/org.geotools.ogc/net.opengis.ows/jars/net.opengis.ows-9.3.jar">
+						<origin-location is-local="false" location="http://download.osgeo.org/webdav/geotools/org/geotools/ogc/net.opengis.ows/9.3/net.opengis.ows-9.3.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.geotools.ogc" name="org.w3.xlink">
+			<revision name="9.3" status="release" pubdate="20130622085344" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="34">
+				<metadata-artifact status="no" details="" size="29146" time="0" location="/Users/ericwood/.ivy2/cache/org.geotools.ogc/org.w3.xlink/ivy-9.3.xml" searched="false" origin-is-local="false" origin-location="http://download.osgeo.org/webdav/geotools/org/geotools/ogc/org.w3.xlink/9.3/org.w3.xlink-9.3.pom"/>
+				<caller organisation="org.geotools.ogc" name="net.opengis.fes" conf="compile, runtime" rev="9.3" rev-constraint-default="9.3" rev-constraint-dynamic="9.3" callerrev="9.3"/>
+				<caller organisation="org.geotools.ogc" name="net.opengis.ows" conf="compile, runtime" rev="9.3" rev-constraint-default="9.3" rev-constraint-dynamic="9.3" callerrev="9.3"/>
+				<caller organisation="org.geotools.ogc" name="net.opengis.wfs" conf="compile, runtime" rev="9.3" rev-constraint-default="9.3" rev-constraint-dynamic="9.3" callerrev="9.3"/>
+				<artifacts>
+					<artifact name="org.w3.xlink" type="jar" ext="jar" status="no" details="" size="52991" time="0" location="/Users/ericwood/.ivy2/cache/org.geotools.ogc/org.w3.xlink/jars/org.w3.xlink-9.3.jar">
+						<origin-location is-local="false" location="http://download.osgeo.org/webdav/geotools/org/geotools/ogc/org.w3.xlink/9.3/org.w3.xlink-9.3.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.eclipse.emf" name="ecore">
+			<revision name="2.6.1" status="release" pubdate="20110310223733" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="36">
+				<metadata-artifact status="no" details="" size="2186" time="0" location="/Users/ericwood/.ivy2/cache/org.eclipse.emf/ecore/ivy-2.6.1.xml" searched="false" origin-is-local="false" origin-location="http://download.osgeo.org/webdav/geotools/org/eclipse/emf/ecore/2.6.1/ecore-2.6.1.pom"/>
+				<caller organisation="org.geotools.ogc" name="net.opengis.fes" conf="compile, runtime" rev="2.6.1" rev-constraint-default="2.6.1" rev-constraint-dynamic="2.6.1" callerrev="9.3"/>
+				<caller organisation="org.geotools.ogc" name="org.w3.xlink" conf="compile, runtime" rev="2.6.1" rev-constraint-default="2.6.1" rev-constraint-dynamic="2.6.1" callerrev="9.3"/>
+				<caller organisation="org.geotools.xsd" name="gt-xsd-core" conf="compile, runtime" rev="2.6.1" rev-constraint-default="2.6.1" rev-constraint-dynamic="2.6.1" callerrev="9.3"/>
+				<caller organisation="org.geotools.ogc" name="net.opengis.ows" conf="compile, runtime" rev="2.6.1" rev-constraint-default="2.6.1" rev-constraint-dynamic="2.6.1" callerrev="9.3"/>
+				<caller organisation="org.geotools.ogc" name="net.opengis.wfs" conf="compile, runtime" rev="2.6.1" rev-constraint-default="2.6.1" rev-constraint-dynamic="2.6.1" callerrev="9.3"/>
+				<artifacts>
+					<artifact name="ecore" type="jar" ext="jar" status="no" details="" size="1231403" time="0" location="/Users/ericwood/.ivy2/cache/org.eclipse.emf/ecore/jars/ecore-2.6.1.jar">
+						<origin-location is-local="false" location="http://download.osgeo.org/webdav/geotools/org/eclipse/emf/ecore/2.6.1/ecore-2.6.1.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.eclipse.emf" name="common">
+			<revision name="2.6.0" status="release" pubdate="20110310223311" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="35">
+				<metadata-artifact status="no" details="" size="2188" time="0" location="/Users/ericwood/.ivy2/cache/org.eclipse.emf/common/ivy-2.6.0.xml" searched="false" origin-is-local="false" origin-location="http://download.osgeo.org/webdav/geotools/org/eclipse/emf/common/2.6.0/common-2.6.0.pom"/>
+				<caller organisation="org.geotools.ogc" name="net.opengis.fes" conf="compile, runtime" rev="2.6.0" rev-constraint-default="2.6.0" rev-constraint-dynamic="2.6.0" callerrev="9.3"/>
+				<caller organisation="org.geotools.ogc" name="org.w3.xlink" conf="compile, runtime" rev="2.6.0" rev-constraint-default="2.6.0" rev-constraint-dynamic="2.6.0" callerrev="9.3"/>
+				<caller organisation="org.geotools.xsd" name="gt-xsd-core" conf="compile, runtime" rev="2.6.0" rev-constraint-default="2.6.0" rev-constraint-dynamic="2.6.0" callerrev="9.3"/>
+				<caller organisation="org.geotools.ogc" name="net.opengis.ows" conf="compile, runtime" rev="2.6.0" rev-constraint-default="2.6.0" rev-constraint-dynamic="2.6.0" callerrev="9.3"/>
+				<caller organisation="org.geotools.ogc" name="net.opengis.wfs" conf="compile, runtime" rev="2.6.0" rev-constraint-default="2.6.0" rev-constraint-dynamic="2.6.0" callerrev="9.3"/>
+				<artifacts>
+					<artifact name="common" type="jar" ext="jar" status="no" details="" size="211652" time="0" location="/Users/ericwood/.ivy2/cache/org.eclipse.emf/common/jars/common-2.6.0.jar">
+						<origin-location is-local="false" location="http://download.osgeo.org/webdav/geotools/org/eclipse/emf/common/2.6.0/common-2.6.0.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.geotools" name="gt-render">
+			<revision name="9.3" status="release" pubdate="20130622085333" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="23">
+				<license name="Lesser General Public License (LGPL)" url="http://www.gnu.org/copyleft/lesser.txt"/>
+				<metadata-artifact status="no" details="" size="30917" time="0" location="/Users/ericwood/.ivy2/cache/org.geotools/gt-render/ivy-9.3.xml" searched="false" origin-is-local="false" origin-location="http://download.osgeo.org/webdav/geotools/org/geotools/gt-render/9.3/gt-render-9.3.pom"/>
+				<caller organisation="org.geoscript" name="geoscript_2.11" conf="compile" rev="9.3" rev-constraint-default="9.3" rev-constraint-dynamic="9.3" callerrev="0.8.2"/>
+				<artifacts>
+					<artifact name="gt-render" type="jar" ext="jar" status="no" details="" size="424260" time="0" location="/Users/ericwood/.ivy2/cache/org.geotools/gt-render/jars/gt-render-9.3.jar">
+						<origin-location is-local="false" location="http://download.osgeo.org/webdav/geotools/org/geotools/gt-render/9.3/gt-render-9.3.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.geotools" name="gt-coverage">
+			<revision name="9.3" status="release" pubdate="20130622085258" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="24">
+				<license name="Lesser General Public License (LGPL)" url="http://www.gnu.org/copyleft/lesser.txt"/>
+				<metadata-artifact status="no" details="" size="31108" time="0" location="/Users/ericwood/.ivy2/cache/org.geotools/gt-coverage/ivy-9.3.xml" searched="false" origin-is-local="false" origin-location="http://download.osgeo.org/webdav/geotools/org/geotools/gt-coverage/9.3/gt-coverage-9.3.pom"/>
+				<caller organisation="org.geotools.xsd" name="gt-xsd-filter" conf="compile, runtime" rev="9.3" rev-constraint-default="9.3" rev-constraint-dynamic="9.3" callerrev="9.3"/>
+				<caller organisation="org.geotools.xsd" name="gt-xsd-gml2" conf="compile, runtime" rev="9.3" rev-constraint-default="9.3" rev-constraint-dynamic="9.3" callerrev="9.3"/>
+				<caller organisation="org.geotools.xsd" name="gt-xsd-gml3" conf="compile, runtime" rev="9.3" rev-constraint-default="9.3" rev-constraint-dynamic="9.3" callerrev="9.3"/>
+				<caller organisation="org.geotools.xsd" name="gt-xsd-fes" conf="compile, runtime" rev="9.3" rev-constraint-default="9.3" rev-constraint-dynamic="9.3" callerrev="9.3"/>
+				<caller organisation="org.geotools" name="gt-render" conf="default, compile, runtime, master" rev="9.3" rev-constraint-default="9.3" rev-constraint-dynamic="9.3" callerrev="9.3"/>
+				<artifacts>
+					<artifact name="gt-coverage" type="jar" ext="jar" status="no" details="" size="438435" time="0" location="/Users/ericwood/.ivy2/cache/org.geotools/gt-coverage/jars/gt-coverage-9.3.jar">
+						<origin-location is-local="false" location="http://download.osgeo.org/webdav/geotools/org/geotools/gt-coverage/9.3/gt-coverage-9.3.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.jaitools" name="jt-zonalstats">
+			<revision name="1.3.0" status="release" pubdate="20121002043616" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="29">
+				<metadata-artifact status="no" details="" size="4687" time="0" location="/Users/ericwood/.ivy2/cache/org.jaitools/jt-zonalstats/ivy-1.3.0.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/jaitools/jt-zonalstats/1.3.0/jt-zonalstats-1.3.0.pom"/>
+				<caller organisation="org.geotools" name="gt-coverage" conf="compile, runtime" rev="1.3.0" rev-constraint-default="1.3.0" rev-constraint-dynamic="1.3.0" callerrev="9.3"/>
+				<artifacts>
+					<artifact name="jt-zonalstats" type="jar" ext="jar" status="no" details="" size="19964" time="0" location="/Users/ericwood/.ivy2/cache/org.jaitools/jt-zonalstats/jars/jt-zonalstats-1.3.0.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/jaitools/jt-zonalstats/1.3.0/jt-zonalstats-1.3.0.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.jaitools" name="jt-utils">
+			<revision name="1.3.0" status="release" pubdate="20121002043127" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="30">
+				<metadata-artifact status="no" details="" size="4452" time="0" location="/Users/ericwood/.ivy2/cache/org.jaitools/jt-utils/ivy-1.3.0.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/jaitools/jt-utils/1.3.0/jt-utils-1.3.0.pom"/>
+				<caller organisation="org.geotools" name="gt-coverage" conf="compile, runtime" rev="1.3.0" rev-constraint-default="1.3.0" rev-constraint-dynamic="1.3.0" callerrev="9.3"/>
+				<caller organisation="org.jaitools" name="jt-zonalstats" conf="compile, runtime" rev="1.3.0" rev-constraint-default="1.3.0" rev-constraint-dynamic="1.3.0" callerrev="1.3.0"/>
+				<artifacts>
+					<artifact name="jt-utils" type="jar" ext="jar" status="no" details="" size="198795" time="0" location="/Users/ericwood/.ivy2/cache/org.jaitools/jt-utils/jars/jt-utils-1.3.0.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/jaitools/jt-utils/1.3.0/jt-utils-1.3.0.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="it.geosolutions.imageio-ext" name="imageio-ext-tiff">
+			<revision name="1.1.7" status="release" pubdate="20130314080742" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="26">
+				<metadata-artifact status="no" details="" size="7434" time="0" location="/Users/ericwood/.ivy2/cache/it.geosolutions.imageio-ext/imageio-ext-tiff/ivy-1.1.7.xml" searched="false" origin-is-local="false" origin-location="http://download.osgeo.org/webdav/geotools/it/geosolutions/imageio-ext/imageio-ext-tiff/1.1.7/imageio-ext-tiff-1.1.7.pom"/>
+				<caller organisation="org.geotools" name="gt-coverage" conf="compile, runtime" rev="1.1.7" rev-constraint-default="1.1.7" rev-constraint-dynamic="1.1.7" callerrev="9.3"/>
+				<artifacts>
+					<artifact name="imageio-ext-tiff" type="jar" ext="jar" status="no" details="" size="318052" time="0" location="/Users/ericwood/.ivy2/cache/it.geosolutions.imageio-ext/imageio-ext-tiff/jars/imageio-ext-tiff-1.1.7.jar">
+						<origin-location is-local="false" location="http://download.osgeo.org/webdav/geotools/it/geosolutions/imageio-ext/imageio-ext-tiff/1.1.7/imageio-ext-tiff-1.1.7.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="it.geosolutions.imageio-ext" name="imageio-ext-utilities">
+			<revision name="1.1.7" status="release" pubdate="20130314080223" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="27">
+				<metadata-artifact status="no" details="" size="6989" time="0" location="/Users/ericwood/.ivy2/cache/it.geosolutions.imageio-ext/imageio-ext-utilities/ivy-1.1.7.xml" searched="false" origin-is-local="false" origin-location="http://download.osgeo.org/webdav/geotools/it/geosolutions/imageio-ext/imageio-ext-utilities/1.1.7/imageio-ext-utilities-1.1.7.pom"/>
+				<caller organisation="it.geosolutions.imageio-ext" name="imageio-ext-tiff" conf="compile, runtime" rev="1.1.7" rev-constraint-default="1.1.7" rev-constraint-dynamic="1.1.7" callerrev="1.1.7"/>
+				<artifacts>
+					<artifact name="imageio-ext-utilities" type="jar" ext="jar" status="no" details="" size="40659" time="0" location="/Users/ericwood/.ivy2/cache/it.geosolutions.imageio-ext/imageio-ext-utilities/jars/imageio-ext-utilities-1.1.7.jar">
+						<origin-location is-local="false" location="http://download.osgeo.org/webdav/geotools/it/geosolutions/imageio-ext/imageio-ext-utilities/1.1.7/imageio-ext-utilities-1.1.7.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="javax.media" name="jai_imageio">
+			<revision name="1.1" status="release" pubdate="20081214151514" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="25">
+				<metadata-artifact status="no" details="" size="2192" time="0" location="/Users/ericwood/.ivy2/cache/javax.media/jai_imageio/ivy-1.1.xml" searched="false" origin-is-local="false" origin-location="http://download.osgeo.org/webdav/geotools/javax/media/jai_imageio/1.1/jai_imageio-1.1.pom"/>
+				<caller organisation="org.geotools" name="gt-coverage" conf="compile, runtime" rev="1.1" rev-constraint-default="1.1" rev-constraint-dynamic="1.1" callerrev="9.3"/>
+				<caller organisation="it.geosolutions.imageio-ext" name="imageio-ext-tiff" conf="compile, runtime" rev="1.1" rev-constraint-default="1.1" rev-constraint-dynamic="1.1" callerrev="1.1.7"/>
+				<caller organisation="it.geosolutions.imageio-ext" name="imageio-ext-utilities" conf="compile, runtime" rev="1.1" rev-constraint-default="1.1" rev-constraint-dynamic="1.1" callerrev="1.1.7"/>
+				<artifacts>
+					<artifact name="jai_imageio" type="jar" ext="jar" status="no" details="" size="1140632" time="0" location="/Users/ericwood/.ivy2/cache/javax.media/jai_imageio/jars/jai_imageio-1.1.jar">
+						<origin-location is-local="false" location="http://download.osgeo.org/webdav/geotools/javax/media/jai_imageio/1.1/jai_imageio-1.1.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.geotools" name="gt-shapefile">
+			<revision name="9.3" status="release" pubdate="20130622085242" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="21">
+				<license name="Lesser General Public License (LGPL)" url="http://www.gnu.org/copyleft/lesser.txt"/>
+				<metadata-artifact status="no" details="" size="29621" time="0" location="/Users/ericwood/.ivy2/cache/org.geotools/gt-shapefile/ivy-9.3.xml" searched="false" origin-is-local="false" origin-location="http://download.osgeo.org/webdav/geotools/org/geotools/gt-shapefile/9.3/gt-shapefile-9.3.pom"/>
+				<caller organisation="org.geoscript" name="geoscript_2.11" conf="compile" rev="9.3" rev-constraint-default="9.3" rev-constraint-dynamic="9.3" callerrev="0.8.2"/>
+				<artifacts>
+					<artifact name="gt-shapefile" type="jar" ext="jar" status="no" details="" size="230746" time="0" location="/Users/ericwood/.ivy2/cache/org.geotools/gt-shapefile/jars/gt-shapefile-9.3.jar">
+						<origin-location is-local="false" location="http://download.osgeo.org/webdav/geotools/org/geotools/gt-shapefile/9.3/gt-shapefile-9.3.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.geotools" name="gt-data">
+			<revision name="9.3" status="release" pubdate="20130622085230" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="22">
+				<license name="Lesser General Public License (LGPL)" url="http://www.gnu.org/copyleft/lesser.txt"/>
+				<metadata-artifact status="no" details="" size="29505" time="0" location="/Users/ericwood/.ivy2/cache/org.geotools/gt-data/ivy-9.3.xml" searched="false" origin-is-local="false" origin-location="http://download.osgeo.org/webdav/geotools/org/geotools/gt-data/9.3/gt-data-9.3.pom"/>
+				<caller organisation="org.geotools" name="gt-shapefile" conf="default, compile, runtime, master" rev="9.3" rev-constraint-default="9.3" rev-constraint-dynamic="9.3" callerrev="9.3"/>
+				<caller organisation="org.geotools" name="gt-jdbc" conf="compile, runtime" rev="9.3" rev-constraint-default="9.3" rev-constraint-dynamic="9.3" callerrev="9.3"/>
+				<artifacts>
+					<artifact name="gt-data" type="jar" ext="jar" status="no" details="" size="70972" time="0" location="/Users/ericwood/.ivy2/cache/org.geotools/gt-data/jars/gt-data-9.3.jar">
+						<origin-location is-local="false" location="http://download.osgeo.org/webdav/geotools/org/geotools/gt-data/9.3/gt-data-9.3.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.scala-lang" name="scala-swing">
+			<revision name="2.11.0-M7" status="release" pubdate="20131118150333" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.scala-lang.org/" extra-info.apiURL="http://www.scala-lang.org/api/2.11.0-M7/" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="18">
+				<license name="BSD 3-Clause" url="http://www.scala-lang.org/license.html"/>
+				<metadata-artifact status="no" details="" size="2805" time="0" location="/Users/ericwood/.ivy2/cache/org.scala-lang/scala-swing/ivy-2.11.0-M7.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/scala-lang/scala-swing/2.11.0-M7/scala-swing-2.11.0-M7.pom"/>
+				<caller organisation="org.geoscript" name="geoscript_2.11" conf="compile" rev="2.11.0-M7" rev-constraint-default="2.11.0-M7" rev-constraint-dynamic="2.11.0-M7" callerrev="0.8.2"/>
+				<artifacts>
+					<artifact name="scala-swing" type="jar" ext="jar" status="no" details="" size="710281" time="0" location="/Users/ericwood/.ivy2/cache/org.scala-lang/scala-swing/jars/scala-swing-2.11.0-M7.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/scala-lang/scala-swing/2.11.0-M7/scala-swing-2.11.0-M7.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.geoscript" name="geocss_2.11">
+			<revision name="0.8.2" status="integration" pubdate="20160522162802" resolver="inter-project" artresolver="inter-project" downloaded="false" searched="false" default="false" conf="compile, default(compile)" position="2">
+				<metadata-artifact status="failed" details="" size="0" time="0" searched="false"/>
+				<caller organisation="org.geoscript" name="geoscript_2.11" conf="compile" rev="0.8.2" rev-constraint-default="0.8.2" rev-constraint-dynamic="0.8.2" callerrev="0.8.2"/>
+				<artifacts>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.scala-lang.modules" name="scala-xml_2.11">
+			<revision name="1.0.5" status="release" pubdate="20150724151224" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.scala-lang.org/" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="17">
+				<license name="BSD 3-clause" url="http://opensource.org/licenses/BSD-3-Clause"/>
+				<metadata-artifact status="no" details="" size="3011" time="0" location="/Users/ericwood/.ivy2/cache/org.scala-lang.modules/scala-xml_2.11/ivy-1.0.5.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/scala-lang/modules/scala-xml_2.11/1.0.5/scala-xml_2.11-1.0.5.pom"/>
+				<caller organisation="org.geoscript" name="geocss_2.11" conf="compile" rev="1.0.5" rev-constraint-default="1.0.5" rev-constraint-dynamic="1.0.5" callerrev="0.8.2"/>
+				<artifacts>
+					<artifact name="scala-xml_2.11" type="bundle" ext="jar" status="no" details="" size="671138" time="0" location="/Users/ericwood/.ivy2/cache/org.scala-lang.modules/scala-xml_2.11/bundles/scala-xml_2.11-1.0.5.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/scala-lang/modules/scala-xml_2.11/1.0.5/scala-xml_2.11-1.0.5.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.scala-lang.modules" name="scala-parser-combinators_2.11">
+			<revision name="1.0.4" status="release" pubdate="20150430100747" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.scala-lang.org/" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="16">
+				<license name="BSD 3-clause" url="http://opensource.org/licenses/BSD-3-Clause"/>
+				<metadata-artifact status="no" details="" size="2785" time="0" location="/Users/ericwood/.ivy2/cache/org.scala-lang.modules/scala-parser-combinators_2.11/ivy-1.0.4.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/scala-lang/modules/scala-parser-combinators_2.11/1.0.4/scala-parser-combinators_2.11-1.0.4.pom"/>
+				<caller organisation="org.geoscript" name="geocss_2.11" conf="compile" rev="1.0.4" rev-constraint-default="1.0.4" rev-constraint-dynamic="1.0.4" callerrev="0.8.2"/>
+				<artifacts>
+					<artifact name="scala-parser-combinators_2.11" type="bundle" ext="jar" status="no" details="" size="423753" time="0" location="/Users/ericwood/.ivy2/cache/org.scala-lang.modules/scala-parser-combinators_2.11/bundles/scala-parser-combinators_2.11-1.0.4.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/scala-lang/modules/scala-parser-combinators_2.11/1.0.4/scala-parser-combinators_2.11-1.0.4.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.geotools" name="gt-cql">
+			<revision name="9.3" status="release" pubdate="20130622085220" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="default, compile, runtime(*), master(compile), runtime, default(compile), compile(*), master" position="15">
+				<license name="Lesser General Public License (LGPL)" url="http://www.gnu.org/copyleft/lesser.txt"/>
+				<metadata-artifact status="no" details="" size="29303" time="0" location="/Users/ericwood/.ivy2/cache/org.geotools/gt-cql/ivy-9.3.xml" searched="false" origin-is-local="false" origin-location="http://download.osgeo.org/webdav/geotools/org/geotools/gt-cql/9.3/gt-cql-9.3.pom"/>
+				<caller organisation="org.geotools" name="gt-render" conf="default, compile, runtime, master" rev="9.3" rev-constraint-default="9.3" rev-constraint-dynamic="9.3" callerrev="9.3"/>
+				<caller organisation="org.geoscript" name="geocss_2.11" conf="compile" rev="9.3" rev-constraint-default="9.3" rev-constraint-dynamic="9.3" callerrev="0.8.2"/>
+				<artifacts>
+					<artifact name="gt-cql" type="jar" ext="jar" status="no" details="" size="193123" time="0" location="/Users/ericwood/.ivy2/cache/org.geotools/gt-cql/jars/gt-cql-9.3.jar">
+						<origin-location is-local="false" location="http://download.osgeo.org/webdav/geotools/org/geotools/gt-cql/9.3/gt-cql-9.3.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.geotools" name="gt-main">
+			<revision name="9.3" status="release" pubdate="20130622085110" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="default, compile, runtime(*), master(compile), runtime, default(compile), compile(*), master" position="3">
+				<license name="Lesser General Public License (LGPL)" url="http://www.gnu.org/copyleft/lesser.txt"/>
+				<metadata-artifact status="no" details="" size="22039" time="0" location="/Users/ericwood/.ivy2/cache/org.geotools/gt-main/ivy-9.3.xml" searched="false" origin-is-local="false" origin-location="http://download.osgeo.org/webdav/geotools/org/geotools/gt-main/9.3/gt-main-9.3.pom"/>
+				<caller organisation="org.geotools" name="gt-coverage" conf="compile, runtime" rev="9.3" rev-constraint-default="9.3" rev-constraint-dynamic="9.3" callerrev="9.3"/>
+				<caller organisation="org.geotools.xsd" name="gt-xsd-gml2" conf="compile, runtime" rev="9.3" rev-constraint-default="9.3" rev-constraint-dynamic="9.3" callerrev="9.3"/>
+				<caller organisation="org.geotools" name="gt-render" conf="default, compile, runtime, master" rev="9.3" rev-constraint-default="9.3" rev-constraint-dynamic="9.3" callerrev="9.3"/>
+				<caller organisation="org.geoscript" name="geocss_2.11" conf="compile" rev="9.3" rev-constraint-default="9.3" rev-constraint-dynamic="9.3" callerrev="0.8.2"/>
+				<caller organisation="org.geotools" name="gt-cql" conf="default, compile, runtime, master" rev="9.3" rev-constraint-default="9.3" rev-constraint-dynamic="9.3" callerrev="9.3"/>
+				<caller organisation="org.geotools.xsd" name="gt-xsd-filter" conf="compile, runtime" rev="9.3" rev-constraint-default="9.3" rev-constraint-dynamic="9.3" callerrev="9.3"/>
+				<caller organisation="org.geotools" name="gt-geojson" conf="default, compile, runtime, master" rev="9.3" rev-constraint-default="9.3" rev-constraint-dynamic="9.3" callerrev="9.3"/>
+				<caller organisation="org.geotools" name="gt-xml" conf="default, compile, runtime, master" rev="9.3" rev-constraint-default="9.3" rev-constraint-dynamic="9.3" callerrev="9.3"/>
+				<caller organisation="org.geoscript" name="geoscript_2.11" conf="compile" rev="9.3" rev-constraint-default="9.3" rev-constraint-dynamic="9.3" callerrev="0.8.2"/>
+				<caller organisation="org.geotools.xsd" name="gt-xsd-gml3" conf="compile, runtime" rev="9.3" rev-constraint-default="9.3" rev-constraint-dynamic="9.3" callerrev="9.3"/>
+				<caller organisation="org.geotools.xsd" name="gt-xsd-fes" conf="compile, runtime" rev="9.3" rev-constraint-default="9.3" rev-constraint-dynamic="9.3" callerrev="9.3"/>
+				<caller organisation="org.geotools" name="gt-data" conf="compile, runtime" rev="9.3" rev-constraint-default="9.3" rev-constraint-dynamic="9.3" callerrev="9.3"/>
+				<caller organisation="org.geotools" name="gt-graph" conf="compile, runtime" rev="9.3" rev-constraint-default="9.3" rev-constraint-dynamic="9.3" callerrev="9.3"/>
+				<caller organisation="org.geotools" name="gt-jdbc" conf="compile, runtime" rev="9.3" rev-constraint-default="9.3" rev-constraint-dynamic="9.3" callerrev="9.3"/>
+				<artifacts>
+					<artifact name="gt-main" type="jar" ext="jar" status="no" details="" size="1634770" time="0" location="/Users/ericwood/.ivy2/cache/org.geotools/gt-main/jars/gt-main-9.3.jar">
+						<origin-location is-local="false" location="http://download.osgeo.org/webdav/geotools/org/geotools/gt-main/9.3/gt-main-9.3.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.geotools" name="gt-epsg-hsql">
+			<revision name="9.3" status="release" pubdate="20130622085045" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="19">
+				<license name="Lesser General Public License (LGPL)" url="http://svn.osgeo.org/geotools/trunk/modules/plugin/epsg-hsql/LICENSE.html"/>
+				<license name="EPSG database distribution license" url="http://svn.osgeo.org/geotools/trunk/licenses/EPSG.html"/>
+				<license name="BSD License for HSQL" url="http://svn.osgeo.org/geotools/trunk/licenses/HSQL.html"/>
+				<metadata-artifact status="no" details="" size="29956" time="0" location="/Users/ericwood/.ivy2/cache/org.geotools/gt-epsg-hsql/ivy-9.3.xml" searched="false" origin-is-local="false" origin-location="http://download.osgeo.org/webdav/geotools/org/geotools/gt-epsg-hsql/9.3/gt-epsg-hsql-9.3.pom"/>
+				<caller organisation="org.geoscript" name="geoscript_2.11" conf="compile" rev="9.3" rev-constraint-default="9.3" rev-constraint-dynamic="9.3" callerrev="0.8.2"/>
+				<artifacts>
+					<artifact name="gt-epsg-hsql" type="jar" ext="jar" status="no" details="" size="1997530" time="0" location="/Users/ericwood/.ivy2/cache/org.geotools/gt-epsg-hsql/jars/gt-epsg-hsql-9.3.jar">
+						<origin-location is-local="false" location="http://download.osgeo.org/webdav/geotools/org/geotools/gt-epsg-hsql/9.3/gt-epsg-hsql-9.3.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="commons-dbcp" name="commons-dbcp">
+			<revision name="1.3" status="release" pubdate="20100207124346" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://commons.apache.org/dbcp/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="58">
+				<metadata-artifact status="no" details="" size="5852" time="0" location="/Users/ericwood/.ivy2/cache/commons-dbcp/commons-dbcp/ivy-1.3.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/commons-dbcp/commons-dbcp/1.3/commons-dbcp-1.3.pom"/>
+				<caller organisation="org.geotools" name="gt-jdbc" conf="compile, runtime" rev="1.3" rev-constraint-default="1.3" rev-constraint-dynamic="1.3" callerrev="9.3"/>
+				<artifacts>
+					<artifact name="commons-dbcp" type="jar" ext="jar" status="no" details="" size="148817" time="0" location="/Users/ericwood/.ivy2/cache/commons-dbcp/commons-dbcp/jars/commons-dbcp-1.3.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/commons-dbcp/commons-dbcp/1.3/commons-dbcp-1.3.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="hsqldb" name="hsqldb">
+			<revision name="1.8.0.7" status="release" pubdate="20061002153454" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://hsqldb.org/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="20">
+				<license name="HSQLDB License" url="http://hsqldb.org/web/hsqlLicense.html"/>
+				<metadata-artifact status="no" details="" size="2339" time="0" location="/Users/ericwood/.ivy2/cache/hsqldb/hsqldb/ivy-1.8.0.7.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/hsqldb/hsqldb/1.8.0.7/hsqldb-1.8.0.7.pom"/>
+				<caller organisation="org.geotools" name="gt-epsg-hsql" conf="default, compile, runtime, master" rev="1.8.0.7" rev-constraint-default="1.8.0.7" rev-constraint-dynamic="1.8.0.7" callerrev="9.3"/>
+				<artifacts>
+					<artifact name="hsqldb" type="jar" ext="jar" status="no" details="" size="643727" time="0" location="/Users/ericwood/.ivy2/cache/hsqldb/hsqldb/jars/hsqldb-1.8.0.7.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/hsqldb/hsqldb/1.8.0.7/hsqldb-1.8.0.7.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="jdom" name="jdom">
+			<revision name="1.0" status="release" pubdate="20051222072056" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="14">
+				<metadata-artifact status="no" details="" size="2775" time="0" location="/Users/ericwood/.ivy2/cache/jdom/jdom/ivy-1.0.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/jdom/jdom/1.0/jdom-1.0.pom"/>
+				<caller organisation="org.geotools" name="gt-main" conf="default, compile, runtime, master" rev="1.0" rev-constraint-default="1.0" rev-constraint-dynamic="1.0" callerrev="9.3"/>
+				<caller organisation="org.geotools" name="gt-shapefile" conf="default, compile, runtime, master" rev="1.0" rev-constraint-default="1.0" rev-constraint-dynamic="1.0" callerrev="9.3"/>
+				<artifacts>
+					<artifact name="jdom" type="jar" ext="jar" status="no" details="" size="153253" time="0" location="/Users/ericwood/.ivy2/cache/jdom/jdom/jars/jdom-1.0.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/jdom/jdom/1.0/jdom-1.0.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="xml-apis" name="xml-apis">
+			<revision name="1.0.b2" status="release" pubdate="20070208193046" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://xml.apache.org/commons/#external" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="43">
+				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="3049" time="0" location="/Users/ericwood/.ivy2/cache/xml-apis/xml-apis/ivy-1.0.b2.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/xml-apis/xml-apis/1.0.b2/xml-apis-1.0.b2.pom"/>
+				<caller organisation="picocontainer" name="picocontainer" conf="compile, runtime" rev="1.0.b2" rev-constraint-default="1.0.b2" rev-constraint-dynamic="1.0.b2" callerrev="1.2"/>
+				<artifacts>
+					<artifact name="xml-apis" type="jar" ext="jar" status="no" details="" size="109318" time="0" location="/Users/ericwood/.ivy2/cache/xml-apis/xml-apis/jars/xml-apis-1.0.b2.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/xml-apis/xml-apis/1.0.b2/xml-apis-1.0.b2.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.geotools" name="gt-api">
+			<revision name="9.3" status="release" pubdate="20130622085032" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="4">
+				<license name="Lesser General Public License (LGPL)" url="http://www.gnu.org/copyleft/lesser.txt"/>
+				<metadata-artifact status="no" details="" size="29593" time="0" location="/Users/ericwood/.ivy2/cache/org.geotools/gt-api/ivy-9.3.xml" searched="false" origin-is-local="false" origin-location="http://download.osgeo.org/webdav/geotools/org/geotools/gt-api/9.3/gt-api-9.3.pom"/>
+				<caller organisation="org.geotools.ogc" name="net.opengis.fes" conf="compile, runtime" rev="9.3" rev-constraint-default="9.3" rev-constraint-dynamic="9.3" callerrev="9.3"/>
+				<caller organisation="org.geotools.xsd" name="gt-xsd-filter" conf="compile, runtime" rev="9.3" rev-constraint-default="9.3" rev-constraint-dynamic="9.3" callerrev="9.3"/>
+				<caller organisation="org.geotools" name="gt-coverage" conf="compile, runtime" rev="9.3" rev-constraint-default="9.3" rev-constraint-dynamic="9.3" callerrev="9.3"/>
+				<caller organisation="org.geotools" name="gt-main" conf="default, compile, runtime, master" rev="9.3" rev-constraint-default="9.3" rev-constraint-dynamic="9.3" callerrev="9.3"/>
+				<caller organisation="org.geotools" name="gt-xml" conf="default, compile, runtime, master" rev="9.3" rev-constraint-default="9.3" rev-constraint-dynamic="9.3" callerrev="9.3"/>
+				<caller organisation="org.geotools.xsd" name="gt-xsd-gml2" conf="compile, runtime" rev="9.3" rev-constraint-default="9.3" rev-constraint-dynamic="9.3" callerrev="9.3"/>
+				<caller organisation="org.geotools.xsd" name="gt-xsd-gml3" conf="compile, runtime" rev="9.3" rev-constraint-default="9.3" rev-constraint-dynamic="9.3" callerrev="9.3"/>
+				<caller organisation="org.geotools.xsd" name="gt-xsd-fes" conf="compile, runtime" rev="9.3" rev-constraint-default="9.3" rev-constraint-dynamic="9.3" callerrev="9.3"/>
+				<caller organisation="org.geotools.ogc" name="net.opengis.wfs" conf="compile, runtime" rev="9.3" rev-constraint-default="9.3" rev-constraint-dynamic="9.3" callerrev="9.3"/>
+				<caller organisation="org.geotools" name="gt-jdbc" conf="compile, runtime" rev="9.3" rev-constraint-default="9.3" rev-constraint-dynamic="9.3" callerrev="9.3"/>
+				<artifacts>
+					<artifact name="gt-api" type="jar" ext="jar" status="no" details="" size="160000" time="0" location="/Users/ericwood/.ivy2/cache/org.geotools/gt-api/jars/gt-api-9.3.jar">
+						<origin-location is-local="false" location="http://download.osgeo.org/webdav/geotools/org/geotools/gt-api/9.3/gt-api-9.3.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.geotools" name="gt-referencing">
+			<revision name="9.3" status="release" pubdate="20130622085018" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="6">
+				<license name="Lesser General Public License (LGPL)" url="http://www.gnu.org/copyleft/lesser.txt"/>
+				<metadata-artifact status="no" details="" size="29777" time="0" location="/Users/ericwood/.ivy2/cache/org.geotools/gt-referencing/ivy-9.3.xml" searched="false" origin-is-local="false" origin-location="http://download.osgeo.org/webdav/geotools/org/geotools/gt-referencing/9.3/gt-referencing-9.3.pom"/>
+				<caller organisation="org.geotools.xsd" name="gt-xsd-filter" conf="compile, runtime" rev="9.3" rev-constraint-default="9.3" rev-constraint-dynamic="9.3" callerrev="9.3"/>
+				<caller organisation="org.geotools" name="gt-api" conf="compile, runtime" rev="9.3" rev-constraint-default="9.3" rev-constraint-dynamic="9.3" callerrev="9.3"/>
+				<caller organisation="org.geotools" name="gt-coverage" conf="compile, runtime" rev="9.3" rev-constraint-default="9.3" rev-constraint-dynamic="9.3" callerrev="9.3"/>
+				<caller organisation="org.geotools.xsd" name="gt-xsd-gml2" conf="compile, runtime" rev="9.3" rev-constraint-default="9.3" rev-constraint-dynamic="9.3" callerrev="9.3"/>
+				<caller organisation="org.geotools" name="gt-shapefile" conf="default, compile, runtime, master" rev="9.3" rev-constraint-default="9.3" rev-constraint-dynamic="9.3" callerrev="9.3"/>
+				<caller organisation="org.geotools.xsd" name="gt-xsd-gml3" conf="compile, runtime" rev="9.3" rev-constraint-default="9.3" rev-constraint-dynamic="9.3" callerrev="9.3"/>
+				<caller organisation="org.geotools.xsd" name="gt-xsd-fes" conf="compile, runtime" rev="9.3" rev-constraint-default="9.3" rev-constraint-dynamic="9.3" callerrev="9.3"/>
+				<caller organisation="org.geotools" name="gt-epsg-hsql" conf="default, compile, runtime, master" rev="9.3" rev-constraint-default="9.3" rev-constraint-dynamic="9.3" callerrev="9.3"/>
+				<artifacts>
+					<artifact name="gt-referencing" type="jar" ext="jar" status="no" details="" size="1142259" time="0" location="/Users/ericwood/.ivy2/cache/org.geotools/gt-referencing/jars/gt-referencing-9.3.jar">
+						<origin-location is-local="false" location="http://download.osgeo.org/webdav/geotools/org/geotools/gt-referencing/9.3/gt-referencing-9.3.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="jgridshift" name="jgridshift">
+			<revision name="1.0" status="release" pubdate="20120311071311" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="13">
+				<metadata-artifact status="no" details="" size="2189" time="0" location="/Users/ericwood/.ivy2/cache/jgridshift/jgridshift/ivy-1.0.xml" searched="false" origin-is-local="false" origin-location="http://download.osgeo.org/webdav/geotools/jgridshift/jgridshift/1.0/jgridshift-1.0.pom"/>
+				<caller organisation="org.geotools" name="gt-referencing" conf="compile, runtime" rev="1.0" rev-constraint-default="1.0" rev-constraint-dynamic="1.0" callerrev="9.3"/>
+				<artifacts>
+					<artifact name="jgridshift" type="jar" ext="jar" status="no" details="" size="11497" time="0" location="/Users/ericwood/.ivy2/cache/jgridshift/jgridshift/jars/jgridshift-1.0.jar">
+						<origin-location is-local="false" location="http://download.osgeo.org/webdav/geotools/jgridshift/jgridshift/1.0/jgridshift-1.0.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.geotools" name="gt-metadata">
+			<revision name="9.3" status="release" pubdate="20130622085000" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="9">
+				<license name="Lesser General Public License (LGPL)" url="http://www.gnu.org/copyleft/lesser.txt"/>
+				<metadata-artifact status="no" details="" size="29371" time="0" location="/Users/ericwood/.ivy2/cache/org.geotools/gt-metadata/ivy-9.3.xml" searched="false" origin-is-local="false" origin-location="http://download.osgeo.org/webdav/geotools/org/geotools/gt-metadata/9.3/gt-metadata-9.3.pom"/>
+				<caller organisation="org.geotools" name="gt-referencing" conf="compile, runtime" rev="9.3" rev-constraint-default="9.3" rev-constraint-dynamic="9.3" callerrev="9.3"/>
+				<artifacts>
+					<artifact name="gt-metadata" type="jar" ext="jar" status="no" details="" size="505595" time="0" location="/Users/ericwood/.ivy2/cache/org.geotools/gt-metadata/jars/gt-metadata-9.3.jar">
+						<origin-location is-local="false" location="http://download.osgeo.org/webdav/geotools/org/geotools/gt-metadata/9.3/gt-metadata-9.3.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.geotools" name="gt-opengis">
+			<revision name="9.3" status="release" pubdate="20130622084945" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="10">
+				<license name="OGC copyright" url="http://www.opengis.org/legal/"/>
+				<license name="Lesser General Public License (LGPL)" url="http://www.gnu.org/copyleft/lesser.txt"/>
+				<metadata-artifact status="no" details="" size="29662" time="0" location="/Users/ericwood/.ivy2/cache/org.geotools/gt-opengis/ivy-9.3.xml" searched="false" origin-is-local="false" origin-location="http://download.osgeo.org/webdav/geotools/org/geotools/gt-opengis/9.3/gt-opengis-9.3.pom"/>
+				<caller organisation="org.geotools" name="gt-metadata" conf="compile, runtime" rev="9.3" rev-constraint-default="9.3" rev-constraint-dynamic="9.3" callerrev="9.3"/>
+				<artifacts>
+					<artifact name="gt-opengis" type="jar" ext="jar" status="no" details="" size="345588" time="0" location="/Users/ericwood/.ivy2/cache/org.geotools/gt-opengis/jars/gt-opengis-9.3.jar">
+						<origin-location is-local="false" location="http://download.osgeo.org/webdav/geotools/org/geotools/gt-opengis/9.3/gt-opengis-9.3.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="javax.media" name="jai_core">
+			<revision name="1.1.3" status="release" pubdate="20090710123022" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://jai.dev.java.net/" downloaded="false" searched="false" default="false" conf="default, compile, runtime(*), master(compile), runtime, default(compile), compile(*), master" position="12">
+				<license name="JDL (Java Distribution License)" url="https://jai.dev.java.net/jdl-jai.pdf"/>
+				<metadata-artifact status="no" details="" size="2909" time="0" location="/Users/ericwood/.ivy2/cache/javax.media/jai_core/ivy-1.1.3.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/javax/media/jai_core/1.1.3/jai_core-1.1.3.pom"/>
+				<caller organisation="org.geotools" name="gt-coverage" conf="compile, runtime" rev="1.1.3" rev-constraint-default="1.1.3" rev-constraint-dynamic="1.1.3" callerrev="9.3"/>
+				<caller organisation="org.geotools.xsd" name="gt-xsd-wfs" conf="compile, runtime" rev="1.1.3" rev-constraint-default="1.1.3" rev-constraint-dynamic="1.1.3" callerrev="9.3"/>
+				<caller organisation="org.geotools" name="gt-cql" conf="default, compile, runtime, master" rev="1.1.3" rev-constraint-default="1.1.3" rev-constraint-dynamic="1.1.3" callerrev="9.3"/>
+				<caller organisation="org.geotools" name="gt-referencing" conf="compile, runtime" rev="1.1.3" rev-constraint-default="1.1.3" rev-constraint-dynamic="1.1.3" callerrev="9.3"/>
+				<caller organisation="org.geotools.xsd" name="gt-xsd-filter" conf="compile, runtime" rev="1.1.3" rev-constraint-default="1.1.3" rev-constraint-dynamic="1.1.3" callerrev="9.3"/>
+				<caller organisation="org.geotools" name="gt-geojson" conf="default, compile, runtime, master" rev="1.1.3" rev-constraint-default="1.1.3" rev-constraint-dynamic="1.1.3" callerrev="9.3"/>
+				<caller organisation="org.geotools" name="gt-main" conf="default, compile, runtime, master" rev="1.1.3" rev-constraint-default="1.1.3" rev-constraint-dynamic="1.1.3" callerrev="9.3"/>
+				<caller organisation="org.geotools" name="gt-xml" conf="default, compile, runtime, master" rev="1.1.3" rev-constraint-default="1.1.3" rev-constraint-dynamic="1.1.3" callerrev="9.3"/>
+				<caller organisation="org.geotools.xsd" name="gt-xsd-core" conf="compile, runtime" rev="1.1.3" rev-constraint-default="1.1.3" rev-constraint-dynamic="1.1.3" callerrev="9.3"/>
+				<caller organisation="org.geotools.xsd" name="gt-xsd-gml3" conf="compile, runtime" rev="1.1.3" rev-constraint-default="1.1.3" rev-constraint-dynamic="1.1.3" callerrev="9.3"/>
+				<caller organisation="org.geotools.xsd" name="gt-xsd-fes" conf="compile, runtime" rev="1.1.3" rev-constraint-default="1.1.3" rev-constraint-dynamic="1.1.3" callerrev="9.3"/>
+				<caller organisation="org.geotools.jdbc" name="gt-jdbc-postgis" conf="default, compile, runtime, master" rev="1.1.3" rev-constraint-default="1.1.3" rev-constraint-dynamic="1.1.3" callerrev="9.3"/>
+				<caller organisation="org.geotools" name="gt-data" conf="compile, runtime" rev="1.1.3" rev-constraint-default="1.1.3" rev-constraint-dynamic="1.1.3" callerrev="9.3"/>
+				<caller organisation="org.geotools" name="gt-jdbc" conf="compile, runtime" rev="1.1.3" rev-constraint-default="1.1.3" rev-constraint-dynamic="1.1.3" callerrev="9.3"/>
+				<caller organisation="org.geotools" name="gt-api" conf="compile, runtime" rev="1.1.3" rev-constraint-default="1.1.3" rev-constraint-dynamic="1.1.3" callerrev="9.3"/>
+				<caller organisation="org.geotools.xsd" name="gt-xsd-ows" conf="compile, runtime" rev="1.1.3" rev-constraint-default="1.1.3" rev-constraint-dynamic="1.1.3" callerrev="9.3"/>
+				<caller organisation="org.geotools.ogc" name="org.w3.xlink" conf="compile, runtime" rev="1.1.3" rev-constraint-default="1.1.3" rev-constraint-dynamic="1.1.3" callerrev="9.3"/>
+				<caller organisation="org.geotools.xsd" name="gt-xsd-gml2" conf="compile, runtime" rev="1.1.3" rev-constraint-default="1.1.3" rev-constraint-dynamic="1.1.3" callerrev="9.3"/>
+				<caller organisation="org.geotools.ogc" name="net.opengis.ows" conf="compile, runtime" rev="1.1.3" rev-constraint-default="1.1.3" rev-constraint-dynamic="1.1.3" callerrev="9.3"/>
+				<caller organisation="org.geotools" name="gt-render" conf="default, compile, runtime, master" rev="1.1.3" rev-constraint-default="1.1.3" rev-constraint-dynamic="1.1.3" callerrev="9.3"/>
+				<caller organisation="it.geosolutions.imageio-ext" name="imageio-ext-tiff" conf="compile, runtime" rev="1.1.3" rev-constraint-default="1.1.3" rev-constraint-dynamic="1.1.3" callerrev="1.1.7"/>
+				<caller organisation="org.geotools.ogc" name="net.opengis.fes" conf="compile, runtime" rev="1.1.3" rev-constraint-default="1.1.3" rev-constraint-dynamic="1.1.3" callerrev="9.3"/>
+				<caller organisation="org.geotools.jdbc" name="gt-jdbc-spatialite" conf="default, compile, runtime, master" rev="1.1.3" rev-constraint-default="1.1.3" rev-constraint-dynamic="1.1.3" callerrev="9.3"/>
+				<caller organisation="org.geoscript" name="geoscript_2.11" conf="compile" rev="1.1.3" rev-constraint-default="1.1.3" rev-constraint-dynamic="1.1.3" callerrev="0.8.2"/>
+				<caller organisation="org.geotools" name="gt-shapefile" conf="default, compile, runtime, master" rev="1.1.3" rev-constraint-default="1.1.3" rev-constraint-dynamic="1.1.3" callerrev="9.3"/>
+				<caller organisation="org.geotools" name="gt-metadata" conf="compile, runtime" rev="1.1.3" rev-constraint-default="1.1.3" rev-constraint-dynamic="1.1.3" callerrev="9.3"/>
+				<caller organisation="org.geotools" name="gt-opengis" conf="compile, runtime" rev="1.1.3" rev-constraint-default="1.1.3" rev-constraint-dynamic="1.1.3" callerrev="9.3"/>
+				<caller organisation="org.geotools" name="gt-epsg-hsql" conf="default, compile, runtime, master" rev="1.1.3" rev-constraint-default="1.1.3" rev-constraint-dynamic="1.1.3" callerrev="9.3"/>
+				<caller organisation="org.geotools.ogc" name="net.opengis.wfs" conf="compile, runtime" rev="1.1.3" rev-constraint-default="1.1.3" rev-constraint-dynamic="1.1.3" callerrev="9.3"/>
+				<caller organisation="it.geosolutions.imageio-ext" name="imageio-ext-utilities" conf="compile, runtime" rev="1.1.3" rev-constraint-default="1.1.3" rev-constraint-dynamic="1.1.3" callerrev="1.1.7"/>
+				<caller organisation="org.geotools" name="gt-graph" conf="compile, runtime" rev="1.1.3" rev-constraint-default="1.1.3" rev-constraint-dynamic="1.1.3" callerrev="9.3"/>
+				<artifacts>
+					<artifact name="jai_core" type="jar" ext="jar" status="no" details="" size="1900631" time="0" location="/Users/ericwood/.ivy2/cache/javax.media/jai_core/jars/jai_core-1.1.3.jar">
+						<origin-location is-local="false" location="http://download.osgeo.org/webdav/geotools/javax/media/jai_core/1.1.3/jai_core-1.1.3.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="javax.media" name="jai_codec">
+			<revision name="1.1.3" status="release" pubdate="20081214151458" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="28">
+				<metadata-artifact status="no" details="" size="2190" time="0" location="/Users/ericwood/.ivy2/cache/javax.media/jai_codec/ivy-1.1.3.xml" searched="false" origin-is-local="false" origin-location="http://download.osgeo.org/webdav/geotools/javax/media/jai_codec/1.1.3/jai_codec-1.1.3.pom"/>
+				<caller organisation="it.geosolutions.imageio-ext" name="imageio-ext-tiff" conf="compile, runtime" rev="1.1.3" rev-constraint-default="1.1.3" rev-constraint-dynamic="1.1.3" callerrev="1.1.7"/>
+				<caller organisation="it.geosolutions.imageio-ext" name="imageio-ext-utilities" conf="compile, runtime" rev="1.1.3" rev-constraint-default="1.1.3" rev-constraint-dynamic="1.1.3" callerrev="1.1.7"/>
+				<artifacts>
+					<artifact name="jai_codec" type="jar" ext="jar" status="no" details="" size="258160" time="0" location="/Users/ericwood/.ivy2/cache/javax.media/jai_codec/jars/jai_codec-1.1.3.jar">
+						<origin-location is-local="false" location="http://download.osgeo.org/webdav/geotools/javax/media/jai_codec/1.1.3/jai_codec-1.1.3.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="net.java.dev.jsr-275" name="jsr-275">
+			<revision name="1.0-beta-2" status="release" pubdate="20100520044550" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://maven.apache.org" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="11">
+				<license name="BSD License" url="http://jscience.org/doc/license.txt"/>
+				<metadata-artifact status="no" details="" size="2656" time="0" location="/Users/ericwood/.ivy2/cache/net.java.dev.jsr-275/jsr-275/ivy-1.0-beta-2.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/net/java/dev/jsr-275/jsr-275/1.0-beta-2/jsr-275-1.0-beta-2.pom"/>
+				<caller organisation="org.geotools" name="gt-opengis" conf="compile, runtime" rev="1.0-beta-2" rev-constraint-default="1.0-beta-2" rev-constraint-dynamic="1.0-beta-2" callerrev="9.3"/>
+				<artifacts>
+					<artifact name="jsr-275" type="jar" ext="jar" status="no" details="" size="91347" time="0" location="/Users/ericwood/.ivy2/cache/net.java.dev.jsr-275/jsr-275/jars/jsr-275-1.0-beta-2.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/net/java/dev/jsr-275/jsr-275/1.0-beta-2/jsr-275-1.0-beta-2.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="commons-pool" name="commons-pool">
+			<revision name="1.5.4" status="release" pubdate="20091112204653" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://commons.apache.org/pool/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="8">
+				<metadata-artifact status="no" details="" size="4814" time="0" location="/Users/ericwood/.ivy2/cache/commons-pool/commons-pool/ivy-1.5.4.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/commons-pool/commons-pool/1.5.4/commons-pool-1.5.4.pom"/>
+				<caller organisation="commons-dbcp" name="commons-dbcp" conf="compile, runtime" rev="1.5.4" rev-constraint-default="1.5.4" rev-constraint-dynamic="1.5.4" callerrev="1.3"/>
+				<caller organisation="org.geotools" name="gt-opengis" conf="compile, runtime" rev="1.5.4" rev-constraint-default="1.5.4" rev-constraint-dynamic="1.5.4" callerrev="9.3"/>
+				<caller organisation="org.geotools" name="gt-referencing" conf="compile, runtime" rev="1.5.4" rev-constraint-default="1.5.4" rev-constraint-dynamic="1.5.4" callerrev="9.3"/>
+				<artifacts>
+					<artifact name="commons-pool" type="jar" ext="jar" status="no" details="" size="96221" time="0" location="/Users/ericwood/.ivy2/cache/commons-pool/commons-pool/jars/commons-pool-1.5.4.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/commons-pool/commons-pool/1.5.4/commons-pool-1.5.4.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="java3d" name="vecmath">
+			<revision name="1.3.2" status="release" pubdate="20090818031016" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="7">
+				<metadata-artifact status="no" details="" size="2181" time="0" location="/Users/ericwood/.ivy2/cache/java3d/vecmath/ivy-1.3.2.xml" searched="false" origin-is-local="false" origin-location="http://download.osgeo.org/webdav/geotools/java3d/vecmath/1.3.2/vecmath-1.3.2.pom"/>
+				<caller organisation="org.geotools" name="gt-opengis" conf="compile, runtime" rev="1.3.2" rev-constraint-default="1.3.2" rev-constraint-dynamic="1.3.2" callerrev="9.3"/>
+				<caller organisation="org.geotools" name="gt-referencing" conf="compile, runtime" rev="1.3.2" rev-constraint-default="1.3.2" rev-constraint-dynamic="1.3.2" callerrev="9.3"/>
+				<artifacts>
+					<artifact name="vecmath" type="jar" ext="jar" status="no" details="" size="249354" time="0" location="/Users/ericwood/.ivy2/cache/java3d/vecmath/jars/vecmath-1.3.2.jar">
+						<origin-location is-local="false" location="http://download.osgeo.org/webdav/geotools/java3d/vecmath/1.3.2/vecmath-1.3.2.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.vividsolutions" name="jts">
+			<revision name="1.13" status="release" pubdate="20121214002909" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://sourceforge.net/projects/jts-topo-suite" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="5">
+				<license name="Lesser General Public License (LGPL)" url="http://www.gnu.org/copyleft/lesser.txt"/>
+				<metadata-artifact status="no" details="" size="2727" time="0" location="/Users/ericwood/.ivy2/cache/com.vividsolutions/jts/ivy-1.13.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/vividsolutions/jts/1.13/jts-1.13.pom"/>
+				<caller organisation="org.geotools" name="gt-api" conf="compile, runtime" rev="1.13" rev-constraint-default="1.13" rev-constraint-dynamic="1.13" callerrev="9.3"/>
+				<caller organisation="org.geotools" name="gt-coverage" conf="compile, runtime" rev="1.13" rev-constraint-default="1.13" rev-constraint-dynamic="1.13" callerrev="9.3"/>
+				<caller organisation="org.jaitools" name="jt-utils" conf="compile, runtime" rev="1.12" rev-constraint-default="1.12" rev-constraint-dynamic="1.12" callerrev="1.3.0"/>
+				<caller organisation="org.geotools" name="gt-main" conf="default, compile, runtime, master" rev="1.13" rev-constraint-default="1.13" rev-constraint-dynamic="1.13" callerrev="9.3"/>
+				<artifacts>
+					<artifact name="jts" type="jar" ext="jar" status="no" details="" size="794991" time="0" location="/Users/ericwood/.ivy2/cache/com.vividsolutions/jts/jars/jts-1.13.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/vividsolutions/jts/1.13/jts-1.13.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+			<revision name="1.12" evicted="latest-revision" evicted-reason="" downloaded="false" searched="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="-1">
+				<evicted-by rev="1.13"/>
+				<caller organisation="org.jaitools" name="jt-utils" conf="compile, runtime" rev="1.12" rev-constraint-default="1.12" rev-constraint-dynamic="1.12" callerrev="1.3.0"/>
+				<artifacts>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.scala-lang" name="scala-library">
+			<revision name="2.11.8" status="release" pubdate="20160304102633" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.scala-lang.org/" extra-info.apiURL="http://www.scala-lang.org/api/2.11.8/" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master, master(*), runtime(*), compile(*), master(compile)" position="0">
+				<license name="BSD 3-Clause" url="http://www.scala-lang.org/license.html"/>
+				<metadata-artifact status="no" details="" size="2653" time="0" location="/Users/ericwood/.ivy2/cache/org.scala-lang/scala-library/ivy-2.11.8.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/scala-lang/scala-library/2.11.8/scala-library-2.11.8.pom"/>
+				<caller organisation="deckboardcalculator" name="deckboardcalculator_2.11" conf="compile-internal, compile, provided, optional" rev="2.11.8" rev-constraint-default="2.11.8" rev-constraint-dynamic="2.11.8" callerrev="1.0.0"/>
+				<caller organisation="org.scala-lang.modules" name="scala-xml_2.11" conf="default, compile, runtime, master" rev="2.11.7" rev-constraint-default="2.11.7" rev-constraint-dynamic="2.11.7" callerrev="1.0.5"/>
+				<caller organisation="org.geoscript" name="geoscript_2.11" conf="compile" rev="2.11.8" rev-constraint-default="2.11.8" rev-constraint-dynamic="2.11.8" callerrev="0.8.2"/>
+				<caller organisation="org.scala-lang" name="scala-reflect" conf="compile, runtime" rev="2.11.7" rev-constraint-default="2.11.7" rev-constraint-dynamic="2.11.7" callerrev="2.11.7"/>
+				<caller organisation="org.scala-lang.modules" name="scala-parser-combinators_2.11" conf="default, compile, runtime, master" rev="2.11.6" rev-constraint-default="2.11.6" rev-constraint-dynamic="2.11.6" callerrev="1.0.4"/>
+				<caller organisation="org.geoscript" name="geocss_2.11" conf="compile" rev="2.11.8" rev-constraint-default="2.11.8" rev-constraint-dynamic="2.11.8" callerrev="0.8.2"/>
+				<caller organisation="org.scala-lang" name="scala-swing" conf="default, compile, runtime, master" rev="2.11.0-M7" rev-constraint-default="2.11.0-M7" rev-constraint-dynamic="2.11.0-M7" callerrev="2.11.0-M7"/>
+				<caller organisation="org.scalactic" name="scalactic_2.11" conf="default, compile, runtime, master" rev="2.11.7" rev-constraint-default="2.11.7" rev-constraint-dynamic="2.11.7" callerrev="2.2.6"/>
+				<artifacts>
+					<artifact name="scala-library" type="jar" ext="jar" status="no" details="" size="5744974" time="0" location="/Users/ericwood/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.11.8.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/scala-lang/scala-library/2.11.8/scala-library-2.11.8.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+			<revision name="2.11.0-M7" evicted="latest-revision" evicted-reason="" downloaded="false" searched="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="-1">
+				<evicted-by rev="2.11.8"/>
+				<caller organisation="org.scala-lang" name="scala-swing" conf="default, compile, runtime, master" rev="2.11.0-M7" rev-constraint-default="2.11.0-M7" rev-constraint-dynamic="2.11.0-M7" callerrev="2.11.0-M7"/>
+				<artifacts>
+				</artifacts>
+			</revision>
+			<revision name="2.11.7" evicted="latest-revision" evicted-reason="" downloaded="false" searched="false" conf="master(*), compile, runtime(*), master(compile), runtime, compile(*), master" position="-1">
+				<evicted-by rev="2.11.8"/>
+				<caller organisation="org.scala-lang.modules" name="scala-xml_2.11" conf="default, compile, runtime, master" rev="2.11.7" rev-constraint-default="2.11.7" rev-constraint-dynamic="2.11.7" callerrev="1.0.5"/>
+				<caller organisation="org.scala-lang" name="scala-reflect" conf="compile, runtime" rev="2.11.7" rev-constraint-default="2.11.7" rev-constraint-dynamic="2.11.7" callerrev="2.11.7"/>
+				<caller organisation="org.scalactic" name="scalactic_2.11" conf="default, compile, runtime, master" rev="2.11.7" rev-constraint-default="2.11.7" rev-constraint-dynamic="2.11.7" callerrev="2.2.6"/>
+				<artifacts>
+				</artifacts>
+			</revision>
+			<revision name="2.11.6" evicted="latest-revision" evicted-reason="" downloaded="false" searched="false" conf="master(*), compile, runtime(*), runtime, compile(*), master" position="-1">
+				<evicted-by rev="2.11.8"/>
+				<caller organisation="org.scala-lang.modules" name="scala-parser-combinators_2.11" conf="default, compile, runtime, master" rev="2.11.6" rev-constraint-default="2.11.6" rev-constraint-dynamic="2.11.6" callerrev="1.0.4"/>
+				<artifacts>
+				</artifacts>
+			</revision>
+		</module>
+	</dependencies>
+</ivy-report>
