@@ -4,36 +4,13 @@ import scala.collection.immutable.Nil
 import deckcalc.Types._
 
 /**
-  * Created by ericwood on 5/21/16.
+  * Created by ericwood on 8/6/16.
   */
-object DeckCalc {
-
-  /** an x-y coordinate */
-  type Coordinate = (Double,Double)
-
-  /** a line representing a deck edge or board edge described by 2 points */
-  type LineSegment = (Coordinate, Coordinate)
-
-  /** equation of a line represented by slope and intercept.  If slope is infinite the intercept is the x intercept */
-  type LineEquation = (Double, Double)
-
-  /** a set of x-y coordinates that define the deck */
-  type DeckPerimeter = List[Coordinate]
-
-  /** A board may have 2 edges made up of line segments and has an overall length. One of the edges will be none if that
-    * edge does not intersect any deck edges
-    * First edge is left edge and second is right */
-  type Board = ((Option[LineSegment], Option[LineSegment]), Double)
-
-  /** Intersection of a board with the deck edge */
-  type DeckEdgeIntersection = (LineSegment, Coordinate)
+object DeckBoardLengthCalculator {
 
 
 
-  type Compare = (Double, Double) => Boolean
-
-
-
+  /** geometry functions */
   def intersection(line1: LineEquation, line2: LineEquation): Option[Coordinate] = (line1, line2) match {
     case (_, (line1._1, _)) => None // Slopes are equal, lines do not intersect
     case (_, (Double.PositiveInfinity, _)) => Some((line2._2, line1._1 * line2._2 + line1._2))
@@ -67,20 +44,6 @@ object DeckCalc {
       case None => None
       case Some(p) => pointInSegment(p, lineSegment)
     }
-  }
-
-//  def intersectionWithVertical(xIntercept: Double, line: LineSegment) : Option[Coordinate] = {
-//    val (slope, yIntercept) = lineEquationFromSegment(line)
-//    Some((xIntercept, slope * xIntercept + yIntercept))
-//  }
-
-  def getDeckEdges(points: Seq[Coordinate]): List[LineSegment] = {
-    def deckEdgesAcc(startingPoint: Coordinate, points: Seq[Coordinate], edges: List[LineSegment]): List[LineSegment] = points match {
-      case Nil => edges
-      case p :: Nil => deckEdgesAcc(startingPoint, Nil, (p, startingPoint) :: edges)
-      case p :: ps => deckEdgesAcc(startingPoint, ps, (p, ps.head) :: edges)
-    }
-    deckEdgesAcc(points.head, points,Nil).reverse
   }
 
   def lineEquationFromSegment(line: LineSegment): LineEquation = {
@@ -128,7 +91,6 @@ object DeckCalc {
     (x2, y2)
   }
 
-//  def getBoardLength(boardLeftEdge: (((Double, Double), (Double, Double)), (Double, Double)), boardRightEdge: (((Double, Double), (Double, Double)), (Double, Double)), leftEdgeIntersections: ((((Double, Double), (Double, Double)), (Double, Double)), (((Double, Double), (Double, Double)), (Double, Double))), rightEdgeIntersections: ((((Double, Double), (Double, Double)), (Double, Double)), (((Double, Double), (Double, Double)), (Double, Double)))) = ???
 
   /**
     * get a list of lengths for the deck boards needed to cover a deck.  Assumes a Cartesian coordinate system with the
@@ -149,6 +111,16 @@ object DeckCalc {
     */
   def deckBoardLengths(deckEdgeVertices: Seq[Coordinate], deckingSlope: Double, deckingWidth: Double, deckBoardSpacing: Double,
                        overrideStartOffset: Option[Double] = None): BoardLengths = {
+
+    def getDeckEdges(points: Seq[Coordinate]): List[LineSegment] = {
+      def deckEdgesAcc(startingPoint: Coordinate, points: Seq[Coordinate], edges: List[LineSegment]): List[LineSegment] = points match {
+        case Nil => edges
+        case p :: Nil => deckEdgesAcc(startingPoint, Nil, (p, startingPoint) :: edges)
+        case p :: ps => deckEdgesAcc(startingPoint, ps, (p, ps.head) :: edges)
+      }
+      deckEdgesAcc(points.head, points,Nil).reverse
+    }
+
     // First get the deck edges as line segments
     val deckEdges = getDeckEdges(deckEdgeVertices)
 
@@ -218,7 +190,7 @@ object DeckCalc {
         case (None, Some(e)) => e._1
         case (Some(e1), Some(e2)) =>
           getPoint(getBoardEndPoints(e1._1, e2._1, topIntersectingEdges),
-                   if (deckingSlope >= 0) (_ > _) else (_ < _), (_ > _))
+            if (deckingSlope >= 0) (_ > _) else (_ < _), (_ > _))
       }
 
       val bottomPoint = (boardLeftEdge, boardRightEdge) match {
@@ -226,7 +198,7 @@ object DeckCalc {
         case (None, Some(e)) => e._2
         case (Some(e1), Some(e2)) =>
           getPoint(getBoardEndPoints(e1._2, e2._2, bottomIntersectingEdges),
-                   if (deckingSlope >= 0) (_ < _) else (_ > _), (_ < _))
+            if (deckingSlope >= 0) (_ < _) else (_ > _), (_ < _))
       }
 
       // Board length is the perpendicular distance between the top and bottom points
@@ -276,18 +248,18 @@ object DeckCalc {
           val rightEdgeAllIntersections = findIntersections(rightEdgeEq)
 
           val topEdges: (Option[LineSegment], Option[LineSegment]) =
-                (leftEdgeAllIntersections, rightEdgeAllIntersections) match {
-            case (Nil, i :: is)  => (None, Some(i._1))
-            case (i :: is, Nil)  => (Some(i._1), None)
-            case (i1 :: _, i2 :: _)  => (Some(i1._1), Some(i2._1))
-          }
+            (leftEdgeAllIntersections, rightEdgeAllIntersections) match {
+              case (Nil, i :: is)  => (None, Some(i._1))
+              case (i :: is, Nil)  => (Some(i._1), None)
+              case (i1 :: _, i2 :: _)  => (Some(i1._1), Some(i2._1))
+            }
 
           val bottomEdges: (Option[LineSegment], Option[LineSegment]) =
-                (leftEdgeAllIntersections, rightEdgeAllIntersections) match {
+            (leftEdgeAllIntersections, rightEdgeAllIntersections) match {
               case (Nil, i :: is)  => (None, Some(is.last._1))
               case (i :: is, Nil)  => (Some(is.last._1), None)
               case (_ :: is1, _ :: is2)  => (Some(is1.last._1), Some(is2.last._1))
-          }
+            }
 
           def getBoardEdgeFromIntersections(intersections: List[DeckEdgeIntersection]): Option[LineSegment] =
             intersections match {
@@ -344,14 +316,14 @@ object DeckCalc {
 
     def getFirstBoard: Board = {
       val startingBoardEdgeEq = nextBoardEdge(lineEquationFromPointAndSlope(correctStartPoint(getStartingPoint),
-                                                                            deckingSlope), deckingWidth)
+        deckingSlope), deckingWidth)
       val deckIntersections = findIntersections(startingBoardEdgeEq)
       val startingBoardEdge = (deckIntersections.head._2, deckIntersections.last._2)
       val (boardLeftEdge, boardRightEdge, topDeckEdges, bottomDeckEdges) = deckingSlope match {
         case slope if slope >= 0 => (None, Some(startingBoardEdge),
-                                    (None, Some(deckIntersections.head._1)), (None, Some(deckIntersections.last._1)))
+          (None, Some(deckIntersections.head._1)), (None, Some(deckIntersections.last._1)))
         case _ => (Some(startingBoardEdge), None,
-                  (Some(deckIntersections.head._1), None), (Some(deckIntersections.last._1), None))
+          (Some(deckIntersections.head._1), None), (Some(deckIntersections.last._1), None))
       }
 
       ((boardLeftEdge, boardRightEdge), getBoardLength(boardLeftEdge, boardRightEdge, topDeckEdges, bottomDeckEdges))
@@ -370,97 +342,6 @@ object DeckCalc {
     }
 
     boardLengthsAcc(getFirstBoard, Nil).reverse
-
   }
-
-//  def placeCut(cutLength: Double, currentCuts: List[BoardCuts], maxBoardLength: Double): List[List[BoardCuts]] = {
-//    // returns a list of baord cuts with the specified cut added to a new board
-//    def addCutToNewBoard(cutLength: Double, currentCuts: List[BoardCuts]): List[BoardCuts] = {
-//      (cutLength :: Nil, maxBoardLength - cutLength) :: currentCuts
-//    }
-//
-//    currentCuts match {
-////      case Nil => ((cutLength :: Nil, maxBoardLength - cutLength) :: currentCuts) :: Nil
-//      case Nil => addCutToNewBoard(cutLength, Nil) :: Nil // board added to list with the board length cut
-//      case _ =>  {
-//        val newCuts = for {
-//          ((cuts, remaining), index) <- currentCuts.zipWithIndex
-//          if (remaining > (cutLength +.02 * maxBoardLength))
-//        }
-//        yield {
-//          currentCuts.updated(index, (cutLength :: cuts, remaining - cutLength))
-//        }
-//
-//        addCutToNewBoard(cutLength, currentCuts) :: newCuts
-//      }
-//    }
-//  }
-
-  // place cut in next available board, adding a new board if it doesn't fit in any existing board
-  def placeCut(cutLength: Double, currentCuts: List[BoardCuts], maxBoardLength: Double): List[BoardCuts] = {
-    def addCutToNewBoard(): List[BoardCuts] = {
-      (cutLength :: Nil, maxBoardLength - cutLength) :: currentCuts
-    }
-    // Find the first board with remaining greater than board length
-    currentCuts.zipWithIndex.find(_._1._2 >= cutLength + .02 * maxBoardLength) match
-    {
-      case None => addCutToNewBoard()
-      case Some(((cuts, remaining), index)) => currentCuts.updated(index, (cutLength :: cuts, remaining - cutLength))
-    }
-  }
-
-  def getBestFitSolution(boardLengths: BoardLengths, maximumBoardLength: Double): List[BoardCuts] = {
-    // Use best fit decreasing to get the upper bound on the number of boards
-    def cutsAcc(boardLengths: BoardLengths, currentCuts: List[BoardCuts]): List[BoardCuts] = boardLengths match {
-      case Nil => currentCuts
-      case bl :: bls => cutsAcc(bls, placeCut(bl, currentCuts.sortBy(_._2), maximumBoardLength))
-    }
-
-    cutsAcc(boardLengths.sorted(Ordering[Double].reverse), Nil)
-  }
-
-  def getBiggestCutFirstSolution(boardLengths: BoardLengths, maximumBoardLength: Double): List[BoardCuts] = {
-    def cutsAcc(boardLengths: BoardLengths, currentCuts: List[BoardCuts]): List[BoardCuts] = boardLengths match {
-      case Nil => currentCuts
-      case bl :: bls => cutsAcc(bls, placeCut(bl, currentCuts.sortBy(_._2), maximumBoardLength))
-    }
-
-    cutsAcc(boardLengths, Nil)
-  }
-
-
-
-//  def getBoardCuts(boardLengths: List[Double], maxBoardLength: Double): List[BoardCuts] = {
-//    def boardCutsAcc(remBoardLengths: BoardLengths, currentCutsList: List[List[BoardCuts]]): List[List[BoardCuts]] = remBoardLengths match {
-//      case Nil => currentCutsList
-//      case bl :: bls =>
-//        // Get all possible cuts for the next board length
-//        println("Placing cut for board length: " + bl + "...")
-//        val allCuts = currentCutsList.flatMap(cuts => placeCut(bl, cuts, maxBoardLength))
-////          for {
-////          cuts <- currentCutsList
-////        }
-////        yield {
-////          placeCut(bl, cuts, maxBoardLength)
-////        }.flatten
-////        println("Possible board cuts: " + allCuts)
-//        boardCutsAcc(bls, allCuts)
-//    }
-//
-//    val allSolutions = boardCutsAcc(boardLengths.tail, placeCut(boardLengths.head, Nil, maxBoardLength))
-//    allSolutions.reduceLeft((acc, l) => if (l.length < acc.length) l else acc)
-//
-////  }
-
-
-//    boardLengths match {}
-//    case Nil => currentCuts
-//    case bl :: bls => {
-//      for {
-//        boardLength => boardLengths
-//
-//      }
-//    }
-//  }
 
 }

@@ -4,14 +4,28 @@
 package deckcalc
 
 object Main extends App {
-  import deckcalc.DeckCalc._
+  import deckcalc.DeckBoardLengthCalculator._
+  import deckcalc.RequiredDeckboardsEstimator._
+  import deckcalc.DeckVisualizer._
+  import deckcalc.Types._
+
+  import java.io._
+
+  val DECKING_WIDTH = 5.25 // inches
+  val DECK_BOARD_SPACING = .125 // inches
 
   val deckPoints = (0.0,0.0) :: (0.0,-91.25) :: (-111.5,-91.25) :: (-111.5,-10.625) :: (-51.125, -10.625) :: (-51.125, 0.0) :: Nil
   val deck2Points = (0.0,0.0) :: (0.0,-98.0) :: (-59.0,-147.0) :: (-123.0,-147.0):: (-123.0,0.0) :: Nil
 
   println ("Deck 1 board lengths")
-  val deck1BoardLengths = deckBoardLengths(deckPoints, -1.0, 5.375)
+  val deck1Slope = -1.0
+  val deck1BoardLengths = deckBoardLengths(deckPoints, -1.0, 5.25, 0.125)
   println(deck1BoardLengths)
+  val html = generateDeckHtml(deckPoints, deck1Slope, DECKING_WIDTH, DECK_BOARD_SPACING).toString
+  val pw = new PrintWriter(new File("deck1.html" ))
+  pw.write(html)
+  pw.close
+
 //  println ("Deck 2 board lengths")
 //  val deck2BoardLengths = deckBoardLengths(deckPoints,-1.0, 5.375)
 //  println(deck2BoardLengths)
