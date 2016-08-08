@@ -14,14 +14,16 @@ object Main extends App {
   val DECKING_WIDTH = 5.25 // inches
   val DECK_BOARD_SPACING = .125 // inches
 
-  val deckPoints = (0.0,0.0) :: (0.0,-91.25) :: (-111.5,-91.25) :: (-111.5,-10.625) :: (-51.125, -10.625) :: (-51.125, 0.0) :: Nil
+  val deckPoints = (0.0, 10.625) :: (60.375, 10.625) :: (60.375, 0.0) :: (111.5, 0.0) :: (111.5, 91.25) :: (0.0, 91.25) :: Nil
+//  val deckPoints = (0.0,0.0) :: (0.0,-91.25) :: (-111.5,-91.25) :: (-111.5,-10.625) :: (-51.125, -10.625) :: (-51.125, 0.0) :: Nil
   val deck2Points = (0.0,0.0) :: (0.0,-98.0) :: (-59.0,-147.0) :: (-123.0,-147.0):: (-123.0,0.0) :: Nil
 
   println ("Deck 1 board lengths")
-  val deck1Slope = -1.0
-  val deck1BoardLengths = deckBoardLengths(deckPoints, -1.0, 5.25, 0.125)
+  val deck1Slope = 1.0
+  val deck1Boards = deckBoards(deckPoints, deck1Slope, 5.25, 0.125)
+  val deck1BoardLengths = boardLengths(deck1Boards)
   println(deck1BoardLengths)
-  val html = generateDeckHtml(deckPoints, deck1Slope, DECKING_WIDTH, DECK_BOARD_SPACING).toString
+  val html = generateDeckHtml(deckPoints, deck1Slope, DECKING_WIDTH, DECK_BOARD_SPACING, deck1Boards).toString
   val pw = new PrintWriter(new File("deck1.html" ))
   pw.write(html)
   pw.close

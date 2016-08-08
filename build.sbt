@@ -11,3 +11,5 @@ libraryDependencies += "org.scalatest" %% "scalatest" % "2.2.6" % "test"
 libraryDependencies += "junit" % "junit" % "4.10" % "test"
 
 libraryDependencies += "com.lihaoyi" %% "scalatags" % "0.6.0"
+
+libraryDependencies += "org.scala-lang.modules" %% "scala-xml" % "1.0.5"
